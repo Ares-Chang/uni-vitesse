@@ -12,7 +12,7 @@ import { ref } from 'vue'
 const title = ref('Hello')
 </script>
 
-<style>
+<style lang="scss" scoped>
 .content {
   display: flex;
   flex-direction: column;
@@ -36,6 +36,6 @@ const title = ref('Hello')
 
 .title {
   font-size: 36rpx;
-  color: #8f8f94;
+  color: pink;
 }
 </style>
