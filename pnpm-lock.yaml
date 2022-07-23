@@ -17,6 +17,7 @@ specifiers:
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3041820220630001
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-3041820220630001
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3041820220630001
+  '@types/node': ^18.0.6
   '@typescript-eslint/eslint-plugin': ^5.30.7
   '@typescript-eslint/parser': ^5.30.7
   eslint: ^8.20.0
@@ -55,6 +56,7 @@ devDependencies:
   '@dcloudio/uni-automator': 3.0.0-alpha-3041820220630001_postcss@8.1.0+vue@3.2.37
   '@dcloudio/uni-cli-shared': 3.0.0-alpha-3041820220630001_postcss@8.1.0+vue@3.2.37
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3041820220630001_5qtnyzzwiqcx62muvwjaft5v2e
+  '@types/node': registry.npmmirror.com/@types/node/18.0.6
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.30.7_6wltbjakwuqm7awqswigmiuhd4
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.30.7_he2ccbldppg44uulnyq4rwocfa
   eslint: registry.npmmirror.com/eslint/8.20.0
@@ -2443,6 +2445,12 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     name: '@types/json-schema'
     version: 7.0.11
+    dev: true
+
+  registry.npmmirror.com/@types/node/18.0.6:
+    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.0.6.tgz}
+    name: '@types/node'
+    version: 18.0.6
     dev: true
 
   registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.30.7_6wltbjakwuqm7awqswigmiuhd4:
