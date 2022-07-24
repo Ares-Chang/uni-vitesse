@@ -15,7 +15,7 @@ module.exports = {
   semi: false, // 是否在每行末尾添加分号
   quoteProps: 'as-needed', // 仅在必需时为对象的 key 添加引号
   bracketSpacing: true, // 控制对象字面量的空格输出
-  endOfLine: 'lf', // 指定 prettier 的换行符
+  endOfLine: 'auto', // 指定 prettier 的换行符
   /**
    * 指定HTML文件的全局空白区域敏感度。
    * 有效选项：
