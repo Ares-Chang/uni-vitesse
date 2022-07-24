@@ -13,6 +13,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential', // 一定要用
     'plugin:prettier/recommended', // 添加 prettier 插件
+    './.eslintrc-auto-import.json', // auto-import 生成
   ],
   parserOptions: {
     ecmaVersion: 'latest',
