@@ -4,12 +4,11 @@ import { resolve } from 'path' // 如果编辑器提示 path 模块找不到，�
 import Unocss from 'unocss/vite'
 import transformWxClass from 'unplugin-transform-wx-class/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    uni(),
-
     /**
      * unocss
      * @see https://github.com/antfu/unocss
@@ -24,6 +23,7 @@ export default defineConfig({
     transformWxClass(),
 
     /**
+     * unplugin-auto-import 按需 import
      * @see https://github.com/antfu/unplugin-auto-import
      */
     AutoImport({
@@ -49,6 +49,17 @@ export default defineConfig({
         enabled: false, // 是否生成 .eslintrc-auto-import.json 文件
       },
     }),
+
+    /**
+     * unplugin-vue-components 按需引入组件
+     * 注意：需注册至 uni 之前，否则不会生效
+     * @see https://github.com/antfu/vite-plugin-components
+     */
+    Components({
+      dts: true,
+    }),
+
+    uni(),
   ],
   resolve: {
     alias: {

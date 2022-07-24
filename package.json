@@ -71,6 +71,7 @@
     "unocss-preset-wxapp": "^0.1.2",
     "unplugin-auto-import": "^0.10.1",
     "unplugin-transform-wx-class": "^0.1.6",
+    "unplugin-vue-components": "^0.21.1",
     "vite": "^2.9.6"
   }
 }
