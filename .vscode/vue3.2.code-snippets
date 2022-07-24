@@ -19,14 +19,14 @@
     "description": "Vue3.2+"
   },
 
-  "快速生成 Sass 段落": {
+  "快速生成 Scss 段落": {
     "prefix": "style",
     "body": [
-      "<style lang=\"sass\" scoped>",
+      "<style lang=\"scss\" scoped>",
       "$2",
       "</style>\n",
     ],
-    "description": "快速生成 sass 段落"
+    "description": "快速生成 scss 段落"
   },
 
 }
