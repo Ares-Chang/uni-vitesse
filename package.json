@@ -54,6 +54,7 @@
     "@dcloudio/uni-automator": "3.0.0-alpha-3041820220630001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3041820220630001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3041820220630001",
+    "@iconify/json": "^2.1.81",
     "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
