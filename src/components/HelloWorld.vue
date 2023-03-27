@@ -10,6 +10,7 @@ const title = ref('Hello World!')
       <text font-32rpx color-green>
         {{ title }}
       </text>
+      <i icon-btn i-carbon-moon />
     </view>
   </view>
 </template>
