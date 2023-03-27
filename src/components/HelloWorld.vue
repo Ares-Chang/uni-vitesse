@@ -5,7 +5,7 @@ const title = ref('Hello World!')
 
 <template>
   <view center flex-col>
-    <image w-200rpx h-200rpx mt-200rpx mb-50rpx src="/static/logo.png" />
+    <image class="img" src="/static/logo.png" />
     <view flex justify-content>
       <text font-32rpx color-green>
         {{ title }}
@@ -14,3 +14,9 @@ const title = ref('Hello World!')
     </view>
   </view>
 </template>
+
+<style lang="scss" scoped>
+.img {
+  @apply w-200rpx h-200rpx mt-200rpx mb-50rpx;
+}
+</style>
