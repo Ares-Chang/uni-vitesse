@@ -21,7 +21,6 @@ specifiers:
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070720230316001
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070720230316001
   '@iconify-json/carbon': ^1.1.16
-  '@vue/tsconfig': ^0.1.3
   eslint: ^8.36.0
   sass: ^1.60.0
   typescript: ^4.9.4
@@ -57,7 +56,6 @@ devDependencies:
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070720230316001
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070720230316001_vite@4.0.4+vue@3.2.47
   '@iconify-json/carbon': 1.1.16
-  '@vue/tsconfig': 0.1.3
   eslint: 8.36.0
   sass: 1.60.0
   typescript: 4.9.5
@@ -3207,15 +3205,6 @@ packages:
 
   /@vue/shared/3.2.47:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
-
-  /@vue/tsconfig/0.1.3:
-    resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
-    peerDependencies:
-      '@types/node': '*'
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-    dev: true
 
   /accepts/1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
