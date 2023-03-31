@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 const title = ref('Hello World!')
+const count = ref(0)
 </script>
 
 <template>
@@ -11,6 +12,18 @@ const title = ref('Hello World!')
         {{ title }}
       </text>
       <i icon-btn i-carbon-moon />
+    </view>
+
+    <view mt-10 flex items-center gap-6>
+      <button @click="count--">
+        -
+      </button>
+      <text>
+        {{ count }}
+      </text>
+      <button @click="count++">
+        +
+      </button>
     </view>
   </view>
 </template>
