@@ -70,6 +70,7 @@
     "unocss": "^0.50.6",
     "unocss-preset-weapp": "^0.5.2",
     "unplugin-auto-import": "^0.15.2",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "4.0.4",
     "vue-tsc": "^1.0.24"
   },

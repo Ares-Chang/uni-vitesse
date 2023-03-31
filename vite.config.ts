@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -37,6 +38,15 @@ export default defineConfig({
         './src/composables',
       ],
       vueTemplate: true,
+    }),
+
+    /**
+     * unplugin-vue-components 按需引入组件
+     * 注意：需注册至 uni 之前，否则不会生效
+     * @see https://github.com/antfu/vite-plugin-components
+     */
+    Components({
+      dts: true,
     }),
 
     uni(),
