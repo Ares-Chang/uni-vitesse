@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 const title = ref('Hello World!')
 const count = ref(0)
 </script>
