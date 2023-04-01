@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const title = $ref('Hello World!')
 const count = $ref(0)
 watchEffect(() => {
   console.log(count)
