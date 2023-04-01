@@ -63,14 +63,14 @@
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/ares-chang/uni-vue3-start/generate).
+[使用这个模板创建仓库](https://github.com/ares-chang/uni-vitesse/generate).
 
 ### 克隆到本地
 
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit ares-chang/uni-vue3-start my-uni-app
+npx degit ares-chang/uni-vitesse my-uni-app
 cd my-uni-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
