@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='https://user-images.githubusercontent.com/36911513/229352455-b0e84534-2429-4207-82bb-1c8c28fab328.png' alt='Uni Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
 
 <h6 align='center'>
