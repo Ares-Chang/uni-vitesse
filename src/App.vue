@@ -10,4 +10,8 @@ onHide(() => {
 })
 </script>
 
-<style></style>
+<style>
+page {
+  @apply: font-sans text-center px-1rem py-2rem gray-700 dark:gray-200;
+}
+</style>
