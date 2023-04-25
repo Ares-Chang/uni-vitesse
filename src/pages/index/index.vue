@@ -15,7 +15,7 @@ function go(url?: string) {
     return
   }
   uni.navigateTo({
-    url: `/pages/hi/hi?name=${name}`,
+    url: `/pages/hi/index?name=${name}`,
   })
 }
 </script>
