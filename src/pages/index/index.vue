@@ -1,14 +1,10 @@
 <script setup lang="ts">
-// defineOptions({
-//   name: 'IndexPage',
-// })
-
 const name = $ref('')
 
-// const router = useRouter()
 function go() {
-  // if (name)
-  // router.push(`/hi/${encodeURIComponent(name)}`)
+  uni.navigateTo({
+    url: `/pages/hi/hi?name=${name}`,
+  })
 }
 </script>
 
