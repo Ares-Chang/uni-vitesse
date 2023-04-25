@@ -9,6 +9,9 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-vitesse",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "app-plus":{
+      "titleNView": false // 移除 H5、APP 顶部导航
+    }
   }
 }
