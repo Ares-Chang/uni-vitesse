@@ -6,6 +6,9 @@
     },
     {
       "path": "pages/hi/hi"
+    },
+    {
+      "path": "pages/webview/index"
     }
   ],
   "globalStyle": {

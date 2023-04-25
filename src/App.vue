@@ -6,8 +6,4 @@
 page {
   @apply: font-sans text-center px-1rem py-2rem color-gray-700 dark:color-gray-200;
 }
-
-a {
-  @apply: decoration-none color-inherit;
-}
 </style>

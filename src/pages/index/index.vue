@@ -1,7 +1,19 @@
 <script setup lang="ts">
 const name = $ref('')
 
-function go() {
+function go(url?: string) {
+  if (url) {
+    // #ifdef H5
+    window.open(url)
+    // #endif
+
+    // #ifndef H5
+    uni.navigateTo({
+      url: `/pages/webview/index?url=${url}`,
+    })
+    // #endif
+    return
+  }
   uni.navigateTo({
     url: `/pages/hi/hi?name=${name}`,
   })
@@ -12,9 +24,7 @@ function go() {
   <div>
     <div i-carbon-campsite inline-block text-4xl />
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
-      </a>
+      <span @click="go('https://github.com/Ares-Chang/uni-vitesse')">Vitesse Lite</span>
     </p>
     <p>
       <em text-sm op75>Opinionated Vite Starter Template</em>
@@ -33,7 +43,7 @@ function go() {
       <button
         class="m-3 text-sm btn"
         :disabled="!name"
-        @click="go"
+        @click="go()"
       >
         Go
       </button>
