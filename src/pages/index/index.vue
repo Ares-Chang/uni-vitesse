@@ -33,10 +33,8 @@ function go(url?: string) {
     <div py-4 />
 
     <TheInput
-      v-model="name"
+      v-model:value="name"
       placeholder="What's your name?"
-      autocomplete="false"
-      @keydown.enter="go"
     />
 
     <div>
