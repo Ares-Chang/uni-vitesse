@@ -12,10 +12,13 @@
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-vitesse",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
     "app-plus": {
       "titleNView": false // 移除 H5、APP 顶部导航
     }

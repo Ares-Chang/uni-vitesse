@@ -7,6 +7,7 @@
   "transformPx": false,
   /* 5+App特有相关 */
   "app-plus": {
+    "darkmode": true,
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
     "compilerVersion": 3,
@@ -46,10 +47,14 @@
       "sdkConfigs": {}
     }
   },
+  "h5": {
+    "darkmode": true
+  },
   /* 快应用特有相关 */
   "quickapp": {},
   /* 小程序特有相关 */
   "mp-weixin": {
+    "darkmode": true,
     "appid": "",
     "setting": {
       "urlCheck": false
