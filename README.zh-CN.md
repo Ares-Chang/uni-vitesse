@@ -24,7 +24,7 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 就是快！
 
-- 📦 [组件自动化加载](https://github.com/antfu/vitesse-lite/blob/main/src/components)
+- 📦 [组件自动化加载](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 

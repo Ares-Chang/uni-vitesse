@@ -24,7 +24,7 @@ Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vite
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-- 📦 [Components auto importing](https://github.com/antfu/vitesse-lite/blob/main/src/components)
+- 📦 [Components auto importing](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
 
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org)
 
