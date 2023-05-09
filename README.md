@@ -3,80 +3,80 @@
 </p>
 
 <h6 align='center'>
-<a href="https://uni-vitesse.netlify.app/">Live Demo</a>
+<a href="https://uni-vitesse.netlify.app/">在线 Demo</a>
 </h6>
 
 <h5 align='center'>
-<b>UniAPP version of <a href="https://github.com/antfu/vitesse-lite">Vitesse-lite</a></b>
+<b>UniAPP 版的 <a href="https://github.com/antfu/vitesse-lite">Vitesse-lite</a></b>
 </h5>
 
 <br/>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/Ares-Chang/uni-vitesse/blob/master/README.zh-CN.md">简体中文</a>
+<b>简体中文</b> | <a href="https://github.com/Ares-Chang/uni-vitesse/blob/master/README.en-US.md">English</a>
 </p>
 
 <br/>
 
-Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vitesse-lite), Strive for a development experience good environment configuration.
+环境配置 Copy From [Vitesse-lite](https://github.com/antfu/vitesse-lite), 力求一个开发体验良好的环境配置。
 
- ## 特性
+## 特性
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 就是快！
 
-- 📦 [Components auto importing](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
+- 📦 [组件自动化加载](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
 
-- 🍍 [State Management via Pinia](https://pinia.vuejs.org)
+- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - The instant on-demand atomic CSS engine.
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 
-- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+- 😃 [各种图标集为你所用](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
+- 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 🦾 TypeScript, of course
+- 🦾 TypeScript, 当然
 
-- 🔒︎ [Lock the pnpm package manager](https://pnpm.io/only-allow-pnpm)
+- 🔒︎ [锁 pnpm 包管理](https://pnpm.io/only-allow-pnpm)
 
 <br>
 
-If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vitesse-lite) is recommended
+如无跨端需求, 更推荐 [Vitesse-lite](https://github.com/antfu/vitesse-lite)
 
-## Dropped Features from  [Vitesse-lite](https://github.com/antfu/vitesse-lite)
+## 从 [Vitesse-lite](https://github.com/antfu/vitesse-lite) 中删除了以下特性
 
 - ~~vite-plugin-pages~~
 - ~~VueUse~~
 - ~~Vitest~~
 
-## Pre-packed
+## 预配置
 
-### UI Frameworks
+### UI 框架
 
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+- [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 
 ### Icons
 
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+- [Iconify](https://iconify.design) - 使用任意的图标集，浏览：[🔍Icônes](https://icones.netlify.app/)
+- [UnoCSS 的纯 CSS 图标方案](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 ### 插件
 
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
+- [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS 小程序预设，兼容在小程序中使用 `Attributify Mode`
 
-## Try it now!
+## 现在可以试试!
 
-### GitHub Template
+### GitHub 模板
 
-[Create a repo from this template on GitHub](https://github.com/ares-chang/uni-vitesse/generate).
+[使用这个模板创建仓库](https://github.com/ares-chang/uni-vitesse/generate).
 
-### Clone to local
+### 克隆到本地
 
-If you prefer to do it manually with the cleaner git history
+如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
 npx degit ares-chang/uni-vitesse my-uni-app
 cd my-uni-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
