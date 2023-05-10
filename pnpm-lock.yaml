@@ -69,6 +69,9 @@ devDependencies:
   '@iconify-json/carbon':
     specifier: ^1.1.16
     version: 1.1.16
+  '@uni-helper/vite-plugin-uni-pages':
+    specifier: ^0.1.8
+    version: 0.1.8(@types/lodash-es@4.17.7)(lodash-es@4.17.21)(lodash@4.17.21)
   '@vue-macros/reactivity-transform':
     specifier: ^0.3.4
     version: registry.npmmirror.com/@vue-macros/reactivity-transform@0.3.4(vue@3.2.47)
@@ -2976,6 +2979,16 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/lodash-es@4.17.7:
+    resolution: {integrity: sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==}
+    dependencies:
+      '@types/lodash': 4.14.194
+    dev: true
+
+  /@types/lodash@4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+    dev: true
+
   /@types/mdast@3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
     dependencies:
@@ -3144,6 +3157,30 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.59.0
       eslint-visitor-keys: 3.4.0
+    dev: true
+
+  /@uni-helper/uni-env@0.0.2:
+    resolution: {integrity: sha512-5eeGoP3Y+v77jybH2HkmjE5+SnYmFw8Hcuxnn+l6fRNyPNcF7tUuTm3xvBJc9qbtE3Bphs1dJQ6Ru+yHl/OEmw==}
+    dev: true
+
+  /@uni-helper/vite-plugin-uni-pages@0.1.8(@types/lodash-es@4.17.7)(lodash-es@4.17.21)(lodash@4.17.21):
+    resolution: {integrity: sha512-6eapMTZbyt0/NI6em2ZTwywZTNpubAIz7amQ7GJe6cyTZNvB+FHNoeJPa47RNpTzWNjYfmVLpVelZ0WrR+gq4Q==}
+    dependencies:
+      '@uni-helper/uni-env': 0.0.2
+      '@vue/compiler-sfc': 3.2.47
+      chokidar: 3.5.3
+      debug: 4.3.4
+      fast-glob: 3.2.12
+      json5: 2.2.3
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.7)(lodash-es@4.17.21)(lodash@4.17.21)
+      magic-string: 0.30.0
+      unconfig: 0.3.7
+      yaml: 2.2.1
+    transitivePeerDependencies:
+      - '@types/lodash-es'
+      - lodash
+      - lodash-es
+      - supports-color
     dev: true
 
   /@unocss/astro@0.51.5(vite@4.3.0):
@@ -6273,6 +6310,22 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: true
+
+  /lodash-unified@1.0.3(@types/lodash-es@4.17.7)(lodash-es@4.17.21)(lodash@4.17.21):
+    resolution: {integrity: sha512-WK9qSozxXOD7ZJQlpSqOT+om2ZfcT4yO+03FuzAHD0wF6S0l0090LRPDx3vhTTLZ8cFKpBn+IOcVXK6qOcIlfQ==}
+    peerDependencies:
+      '@types/lodash-es': '*'
+      lodash: '*'
+      lodash-es: '*'
+    dependencies:
+      '@types/lodash-es': 4.17.7
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+    dev: true
+
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
@@ -8534,7 +8587,7 @@ packages:
       '@vue/reactivity-transform': registry.npmmirror.com/@vue/reactivity-transform@3.3.0-alpha.9
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.0-alpha.9
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
-      magic-string: registry.npmmirror.com/magic-string@0.30.0
+      magic-string: 0.30.0
       postcss: registry.npmmirror.com/postcss@8.4.21
       source-map: registry.npmmirror.com/source-map@0.6.1
     dev: true
@@ -8571,7 +8624,7 @@ packages:
       '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.2.47
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.2.47
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
-      magic-string: registry.npmmirror.com/magic-string@0.25.9
+      magic-string: 0.25.9
 
   registry.npmmirror.com/@vue/reactivity-transform@3.3.0-alpha.9:
     resolution: {integrity: sha512-mW0vmEfOtXUwZaeVoGLb/hVGS9jjOtLMBTURBt2GyFm1Zm1cJfBLSIDW7U4vsgKJpiNIDgBuoQFwE7gWOXUX4w==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.3.0-alpha.9.tgz}
@@ -8582,7 +8635,7 @@ packages:
       '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core@3.3.0-alpha.9
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.0-alpha.9
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
-      magic-string: registry.npmmirror.com/magic-string@0.30.0
+      magic-string: 0.30.0
     dev: true
 
   registry.npmmirror.com/@vue/reactivity@3.2.47:
@@ -9230,7 +9283,7 @@ packages:
     version: 0.1.2
     engines: {node: '>=14.19.0'}
     dependencies:
-      magic-string: registry.npmmirror.com/magic-string@0.30.0
+      magic-string: 0.30.0
     dev: true
 
   registry.npmmirror.com/magic-string@0.25.9:

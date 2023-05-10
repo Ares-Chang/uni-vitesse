@@ -4,10 +4,13 @@ import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    UniPages(),
+
     /**
      * unocss
      * @see https://github.com/antfu/unocss

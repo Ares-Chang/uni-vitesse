@@ -9,13 +9,13 @@ function go(url?: string) {
 
     // #ifndef H5
     uni.navigateTo({
-      url: `/pages/webview/index?url=${url}`,
+      url: `/pages/webview?url=${url}`,
     })
     // #endif
     return
   }
   uni.navigateTo({
-    url: `/pages/hi/index?name=${name}`,
+    url: `/pages/hi?name=${name}`,
   })
 }
 </script>

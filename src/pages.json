@@ -1,14 +1,19 @@
 {
   "pages": [
-    // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/index/index"
+      "path": "pages/index",
+      "type": "home",
+      "style": {}
     },
     {
-      "path": "pages/hi/index"
+      "path": "pages/hi",
+      "type": "page",
+      "style": {}
     },
     {
-      "path": "pages/webview/index"
+      "path": "pages/webview",
+      "type": "page",
+      "style": {}
     }
   ],
   "globalStyle": {
@@ -20,7 +25,8 @@
     "backgroundColorTop": "@bgColorTop",
     "backgroundColorBottom": "@bgColorBottom",
     "app-plus": {
-      "titleNView": false // 移除 H5、APP 顶部导航
+      "titleNView": false
     }
-  }
+  },
+  "subPackages": []
 }
