@@ -16,8 +16,10 @@ function goBack() {
       <em>Dynamic route!</em>
     </p>
 
+    <TheCounter m="t-8 b-5" />
+
     <div>
-      <button m-3 mt-8 text-sm btn @click="goBack">
+      <button m-3 text-sm btn @click="goBack">
         Back
       </button>
     </div>
