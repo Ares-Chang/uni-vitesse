@@ -1,21 +1,16 @@
 <script setup lang="ts">
-const count = ref(0)
+import { useCounterStore } from '@/stores/counter'
 
-function inc() {
-  count.value++
-}
-function dec() {
-  count.value--
-}
+const counter = useCounterStore()
 </script>
 
 <template>
   <div flex justify-center items-center gap-8>
-    <div btn w-60 h-60 p-0 rd-full center @click="dec()">
+    <div btn w-60 h-60 p-0 rd-full center @click="counter.dec()">
       -
     </div>
-    <span font-mono>{{ count }}</span>
-    <div btn w-60 h-60 p-0 rd-full center @click="inc()">
+    <span font-mono>{{ counter.count }}</span>
+    <div btn w-60 h-60 p-0 rd-full center @click="counter.inc()">
       +
     </div>
   </div>
