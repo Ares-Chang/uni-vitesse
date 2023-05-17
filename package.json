@@ -68,7 +68,7 @@
     "@iconify-json/carbon": "^1.1.16",
     "@uni-helper/vite-plugin-uni-pages": "^0.1.9",
     "@vue-macros/reactivity-transform": "^0.3.6",
-    "eslint": "^8.40.0",
+    "eslint": "^8.38.0",
     "pnpm": "^8.5.0",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
