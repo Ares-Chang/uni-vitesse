@@ -3,8 +3,10 @@
 </script>
 
 <style lang="scss">
+@import './styles/main.scss';
+
 page {
-  @apply: font-sans text-center box-border px-1rem py-2rem color-gray-700;
+  @apply: font-sans text-center px-1rem py-2rem color-gray-700;
 }
 
 @media (prefers-color-scheme: dark) {
