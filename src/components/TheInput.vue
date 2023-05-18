@@ -27,3 +27,11 @@ watchEffect(() => {
     outline="none active:none"
   >
 </template>
+
+<style lang="scss" scoped>
+uni-input {
+  @media (prefers-color-scheme: dark) {
+    @apply: border-color-gray-700;
+  }
+}
+</style>

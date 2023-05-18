@@ -1,3 +1,7 @@
 page {
   box-sizing: border-box;
+
+  @media (prefers-color-scheme: dark) {
+    background: #121212;
+  }
 }
