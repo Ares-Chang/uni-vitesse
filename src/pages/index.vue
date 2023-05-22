@@ -48,3 +48,7 @@ function go(url?: string) {
     </div>
   </div>
 </template>
+
+<route lang="yaml">
+layout: home
+</route>

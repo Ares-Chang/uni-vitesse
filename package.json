@@ -66,6 +66,7 @@
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-3071320230417001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3071320230417001",
     "@iconify-json/carbon": "^1.1.16",
+    "@uni-helper/vite-plugin-uni-layouts": "^0.1.0",
     "@uni-helper/vite-plugin-uni-pages": "^0.1.9",
     "@vue-macros/reactivity-transform": "^0.3.6",
     "eslint": "^8.38.0",

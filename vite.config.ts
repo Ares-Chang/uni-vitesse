@@ -4,6 +4,7 @@ import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 
 // @ts-expect-error failed to resolve types
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
@@ -12,6 +13,7 @@ import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 export default defineConfig({
   plugins: [
     UniPages(),
+    UniLayouts(),
 
     /**
      * unocss
