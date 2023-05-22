@@ -3,8 +3,10 @@ import uni from '@dcloudio/vite-plugin-uni'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+
+// @ts-expect-error failed to resolve types
+import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
