@@ -1,4 +1,5 @@
 export const isDark = useDark()
+export const toggleDark = () => isDark.value = !isDark.value
 
 function useDark() {
   const darkMode = ref(false)
