@@ -73,7 +73,7 @@
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "unocss": "^0.51.12",
-    "unocss-preset-weapp": "^0.5.3",
+    "unocss-preset-weapp": "^0.6.3",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
     "vite": "4.3.0",

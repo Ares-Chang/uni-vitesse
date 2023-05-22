@@ -94,8 +94,8 @@ devDependencies:
     specifier: ^0.51.12
     version: 0.51.12(postcss@8.4.23)(vite@4.3.0)
   unocss-preset-weapp:
-    specifier: ^0.5.3
-    version: 0.5.3
+    specifier: ^0.6.3
+    version: 0.6.3
   unplugin-auto-import:
     specifier: ^0.15.3
     version: 0.15.3
@@ -3289,10 +3289,6 @@ packages:
     dependencies:
       '@unocss/core': 0.51.12
       unconfig: 0.3.7
-    dev: true
-
-  /@unocss/core@0.50.8:
-    resolution: {integrity: sha512-rWmyeNE0Na8dJPDynLVar0X22qMHFNhO+/F2FZDpG4tubTavXJJo9uvhZr/D381kiWxt+XZ38y6EAD4UMdBqMA==}
     dev: true
 
   /@unocss/core@0.51.12:
@@ -8238,11 +8234,12 @@ packages:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
 
-  /unocss-preset-weapp@0.5.3:
-    resolution: {integrity: sha512-zuRepNnW3YHsBH/2qaSJv8KKrxxIHqTRfBmBy3PXG2A/MHlQh/g0FBw7GM3ZJISfN9eSU+zsgiMG1ar6dsMl9w==}
+  /unocss-preset-weapp@0.6.3:
+    resolution: {integrity: sha512-mslK9NmBaHkuun2eE5gZDyFL67pKAHKVwjYtLMMr9kqD/SdwSbxUY0nTa9ZecDGD0Ae1idNEVnEAXrHurMsdgQ==}
     dependencies:
       '@rollup/pluginutils': 5.0.2
-      '@unocss/core': 0.50.8
+      '@unocss/core': 0.51.12
+      '@unocss/extractor-arbitrary-variants': 0.51.12
       unplugin-attributify-to-class: 0.2.2
       unplugin-transform-class: 0.3.1
     transitivePeerDependencies:
