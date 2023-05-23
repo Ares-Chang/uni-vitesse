@@ -5,11 +5,11 @@ const props = defineProps<{ name: string }>()
 <template>
   <div>
     <div i-carbon-pedestrian inline-block text-4xl />
-    <p>
-      Hi, {{ props.name }}
+    <p my-1>
+      Hi, {{ props.name }}!
     </p>
-    <p text-sm op50 italic>
-      <em>Dynamic route!</em>
+    <p text-sm op75 italic>
+      <em>Demo of dynamic route</em>
     </p>
 
     <div m="t-8 b-5">
