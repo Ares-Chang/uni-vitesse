@@ -1,7 +1,11 @@
 page {
   box-sizing: border-box;
+}
 
-  @media (prefers-color-scheme: dark) {
-    background: #121212;
-  }
+.app {
+  min-height: 100vh;
+  background: #ffffff;
+}
+.dark {
+  background: #121212;
 }

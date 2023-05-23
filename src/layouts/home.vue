@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{
+    class="app" :class="{
       dark: isDark,
     }"
   >
