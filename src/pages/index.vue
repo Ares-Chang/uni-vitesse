@@ -4,13 +4,7 @@ const name = $ref('')
 
 <template>
   <div>
-    <div i-carbon-campsite inline-block text-4xl />
-    <p my-1>
-      <span @click="router.push('https://github.com/Ares-Chang/uni-vitesse')">Vitesse Lite</span>
-    </p>
-    <p>
-      <em text-sm op75 italic>Opinionated Vite Starter Template</em>
-    </p>
+    <TheLogo />
 
     <div py-4 />
 
