@@ -28,6 +28,8 @@
 
 - 📦 [组件自动化加载](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
 
+- 📑 [布局系统](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/layouts)
+
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎

@@ -28,6 +28,8 @@ Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vite
 
 - 📦 [Components auto importing](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
 
+- 📑 [Layout system](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/layouts)
+
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org)
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - The instant on-demand atomic CSS engine.
