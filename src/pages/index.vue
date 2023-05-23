@@ -9,7 +9,7 @@ const name = $ref('')
       <span @click="router.push('https://github.com/Ares-Chang/uni-vitesse')">Vitesse Lite</span>
     </p>
     <p>
-      <em text-sm op75>Opinionated Vite Starter Template</em>
+      <em text-sm op75 italic>Opinionated Vite Starter Template</em>
     </p>
 
     <div py-4 />
@@ -21,7 +21,7 @@ const name = $ref('')
 
     <div>
       <button
-        class="m-3 text-sm btn"
+        m-3 text-sm btn
         :disabled="!name"
         @click="router.push(`/hi?name=${name}`)"
       >

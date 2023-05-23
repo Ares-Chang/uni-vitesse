@@ -8,11 +8,13 @@ const props = defineProps<{ name: string }>()
     <p>
       Hi, {{ props.name }}
     </p>
-    <p text-sm op50>
+    <p text-sm op50 italic>
       <em>Dynamic route!</em>
     </p>
 
-    <TheCounter m="t-8 b-5" />
+    <div m="t-8 b-5">
+      <TheCounter />
+    </div>
 
     <div>
       <button m-3 text-sm btn @click="router.back()">
