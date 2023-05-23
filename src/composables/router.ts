@@ -57,6 +57,12 @@ class UseRouter {
       replace: true,
     })
   }
+
+  back(delta = 1) {
+    uni.navigateBack({
+      delta,
+    })
+  }
 }
 
 export const router = new UseRouter()

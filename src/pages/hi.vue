@@ -1,9 +1,5 @@
 <script setup lang="ts">
 const props = defineProps<{ name: string }>()
-
-function goBack() {
-  uni.navigateBack()
-}
 </script>
 
 <template>
@@ -19,7 +15,7 @@ function goBack() {
     <TheCounter m="t-8 b-5" />
 
     <div>
-      <button m-3 text-sm btn @click="goBack">
+      <button m-3 text-sm btn @click="router.back()">
         Back
       </button>
     </div>
