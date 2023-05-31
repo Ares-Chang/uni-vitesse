@@ -24,14 +24,7 @@ watchEffect(() => {
     text="center"
     bg="transparent"
     border="~ solid rd gray-200"
+    dark:border-color-gray-700
     outline="none active:none"
   >
 </template>
-
-<style lang="scss" scoped>
-uni-input {
-  @media (prefers-color-scheme: dark) {
-    @apply: border-color-gray-700;
-  }
-}
-</style>
