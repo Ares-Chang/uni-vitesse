@@ -84,3 +84,7 @@ npx degit ares-chang/uni-vitesse my-uni-app
 cd my-uni-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
+
+### Run
+
+Refer to uni-app official documentation：[运行、发布uni-app](https://uniapp.dcloud.net.cn/quickstart-cli.html#%E8%BF%90%E8%A1%8C%E3%80%81%E5%8F%91%E5%B8%83uni-app)
