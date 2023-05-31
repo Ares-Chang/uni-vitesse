@@ -37,6 +37,7 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
+    "up": "npx taze major -I",
     "lint": "eslint .",
     "preinstall": "npx only-allow pnpm"
   },
