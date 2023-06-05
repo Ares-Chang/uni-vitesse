@@ -20,7 +20,7 @@
 
 Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vitesse-lite), Strive for a development experience good environment configuration.
 
- ## 特性
+ ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
@@ -63,7 +63,7 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-### 插件
+### Plugins
 
 - [vite-plugin-uni-pages](https://github.com/uni-helper/vite-plugin-uni-pages) - file system based routing
 - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - layouts for pages
