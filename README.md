@@ -65,9 +65,9 @@
 
 ### 插件
 
-- [vite-plugin-uni-pages](https://github.com/uni-helper/vite-plugin-uni-pages) - 基于文件的约定式路由
+- [`Pinia`](https://pinia.vuejs.org) - 符合直觉的 Vue.js 状态管理库
+- [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 基于文件的约定式路由
 - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
-- [`Pinia](https://pinia.vuejs.org) - 符合直觉的 Vue.js 状态管理库
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 组件自动导入
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS 小程序预设，兼容在小程序中使用 `Attributify Mode`

@@ -65,9 +65,9 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 ### Plugins
 
-- [vite-plugin-uni-pages](https://github.com/uni-helper/vite-plugin-uni-pages) - file system based routing
+- [`Pinia`](https://pinia.vuejs.org) - Intuitive Vue.js state management library
+- [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - file system based routing
 - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - layouts for pages
-- [`Pinia](https://pinia.vuejs.org) - Intuitive Vue.js state management library
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
