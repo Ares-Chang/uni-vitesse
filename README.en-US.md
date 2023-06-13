@@ -72,6 +72,7 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform standalone package with `reactivityTransform` syntax candy enabled
+- [`uni-env`](https://github.com/uni-helper/uni-env) - Get the current environment gracefully in uni-app
 
 ## Try it now!
 
