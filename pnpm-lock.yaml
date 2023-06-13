@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -76,6 +76,9 @@ devDependencies:
   '@iconify-json/carbon':
     specifier: ^1.1.17
     version: 1.1.17
+  '@uni-helper/uni-env':
+    specifier: ^0.0.3
+    version: 0.0.3
   '@uni-helper/vite-plugin-uni-layouts':
     specifier: ^0.1.0
     version: 0.1.0

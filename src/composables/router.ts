@@ -1,3 +1,5 @@
+import { isH5 } from '@uni-helper/uni-env'
+
 interface Router {
   path: string
   query?: Record<string, any>
@@ -25,16 +27,12 @@ class UseRouter {
 
     const isLink = url?.startsWith('http')
     if (isLink) {
-      // #ifdef H5
-      window.open(url)
-      // #endif
+      if (isH5)
+        return window.open(url, replace ? '_self' : '_blank')
 
-      // #ifndef H5
       uni.navigateTo({
         url: `/pages/webview?url=${url}`,
       })
-      // #endif
-      return
     }
 
     if (replace) {
