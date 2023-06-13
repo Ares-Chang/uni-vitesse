@@ -1,5 +1,11 @@
 import { isH5 } from '@uni-helper/uni-env'
 
+/**
+ * 路由跳转
+ * @param {string} path 路由地址
+ * @param {Record<string, any>} query 路由参数
+ * @param {boolean} replace 是否替换当前页面
+ */
 interface Router {
   path: string
   query?: Record<string, any>
