@@ -60,7 +60,7 @@ export default defineConfig({
      * @see https://github.com/antfu/vite-plugin-components
      */
     Components({
-      dts: true,
+      dts: 'src/components.d.ts',
     }),
 
     uni(),
