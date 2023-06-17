@@ -2,7 +2,7 @@ import { isH5 } from '@uni-helper/uni-env'
 
 /**
  * 路由跳转
- * @param {string} path 路由地址
+ * @param {string} path 路由地址 pages 目录下可省略 pases，子包目录下需要以 ~ 开头，如：~/pages-sub/index
  * @param {Record<string, any>} query 路由参数
  * @param {boolean} replace 是否替换当前页面
  */
@@ -31,7 +31,7 @@ class UseRouter {
       replace = arg?.replace || false
     }
 
-    const isLink = url?.startsWith('http')
+    const isLink = url.startsWith('http')
     if (isLink) {
       if (isH5)
         return window.open(url, replace ? '_self' : '_blank')
@@ -41,16 +41,12 @@ class UseRouter {
       })
     }
 
-    if (replace) {
-      uni.redirectTo({
-        url: `/pages${url}`,
-      })
-    }
-    else {
-      uni.navigateTo({
-        url: `/pages${url}`,
-      })
-    }
+    url = getPath(url)
+
+    if (replace)
+      uni.redirectTo({ url })
+    else
+      uni.navigateTo({ url })
   }
 
   replace(params?: string | Router) {
@@ -67,6 +63,15 @@ class UseRouter {
       delta,
     })
   }
+}
+
+function getPath(url: string) {
+  // 是否是子包
+  const isSub = url[0] === '~'
+  if (isSub)
+    return url.replace('~', '')
+  else
+    return `/pages${url}`
 }
 
 export const router = new UseRouter()
