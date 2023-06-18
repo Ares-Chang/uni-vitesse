@@ -18,7 +18,16 @@ export default defineConfig({
     },
   },
   plugins: [
+    /**
+     * vite-plugin-uni-pages
+     * @see https://github.com/uni-helper/vite-plugin-uni-pages
+     */
     UniPages(),
+
+    /**
+     * vite-plugin-uni-layouts
+     * @see https://github.com/uni-helper/vite-plugin-uni-layouts
+     */
     UniLayouts(),
 
     /**
