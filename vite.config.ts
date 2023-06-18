@@ -44,17 +44,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        {
-          '@dcloudio/uni-app': [
-            'onLaunch',
-            'onShow',
-            'onHide',
-            'onLoad',
-            'onPullDownRefresh',
-            'onReachBottom',
-            // ... 按需添加 {@link https://uniapp.dcloud.net.cn/tutorial/page.html#lifecycle}
-          ],
-        },
+        'uni-app',
       ],
       dts: true,
       dirs: [
