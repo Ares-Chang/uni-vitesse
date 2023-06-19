@@ -4,6 +4,10 @@
       <div icon-btn i-carbon-campsite />
     </div>
 
+    <div title="SubPages" @click="router.push('~/pages-sub/index')">
+      <div icon-btn i-carbon-sub-volume />
+    </div>
+
     <div icon-btn title="Toogle dark mode" @click="toggleDark()">
       <div i-carbon-sun dark:i-carbon-moon />
     </div>
