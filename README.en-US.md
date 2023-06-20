@@ -94,6 +94,17 @@ cd my-uni-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
+### Checklist
+
+When you use this template, try follow the checklist to update your info properly
+
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the project name, description, `appid` in `manifest.json`
+- [ ] Change the icon in `public`
+- [ ] Clean up the `README` and delete the demo pages and components
+
+Now enjoy your new project! :)
+
 ### Run
 
 Refer to uni-app official documentation：[运行、发布uni-app](https://uniapp.dcloud.net.cn/quickstart-cli.html#%E8%BF%90%E8%A1%8C%E3%80%81%E5%8F%91%E5%B8%83uni-app)

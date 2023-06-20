@@ -94,6 +94,17 @@ cd my-uni-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
 
+### 检查清单
+
+当您使用此模板时，请尝试按照清单正确更新您的信息
+
+- [ ] 更改 `LICENSE` 中的作者姓名
+- [ ] 更改 `manifest.json` 中的项目名称，描述，`appid` 等
+- [ ] 更改 `public` 中的图标
+- [ ] 整理 `README` 并删除演示页面和组件
+
+接下来就请享受吧！:)
+
 ### 运行
 
 参考 uni-app 官方文档：[运行、发布uni-app](https://uniapp.dcloud.net.cn/quickstart-cli.html#%E8%BF%90%E8%A1%8C%E3%80%81%E5%8F%91%E5%B8%83uni-app)
