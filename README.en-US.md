@@ -48,7 +48,6 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 ## Dropped Features from  [Vitesse-lite](https://github.com/antfu/vitesse-lite)
 
-- ~~vite-plugin-pages~~
 - ~~VueUse~~
 - ~~Vitest~~
 

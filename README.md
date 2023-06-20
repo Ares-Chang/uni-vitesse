@@ -48,7 +48,6 @@
 
 ## 从 [Vitesse-lite](https://github.com/antfu/vitesse-lite) 中删除了以下特性
 
-- ~~vite-plugin-pages~~
 - ~~VueUse~~
 - ~~Vitest~~
 
