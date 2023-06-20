@@ -73,6 +73,11 @@
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform 独立包，可开启 `reactivityTransform` 语法糖
 - [`uni-env`](https://github.com/uni-helper/uni-env) - 在 uni-app 中优雅的获取当前环境
 
+### 编码风格
+
+- 使用 [`<script setup>` 的 SFC 语法](https://github.com/vuejs/rfcs/pull/227) 与 Composition API 结合使用。
+- 使用 [ESLint](https://eslint.org/) 工具检查代码格式，并使用 [@antfu/eslint-config](https://github.com/antfu/eslint-config) 配置，使用单引号并去掉分号。
+
 ## 现在可以试试!
 
 ### GitHub 模板

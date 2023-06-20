@@ -73,6 +73,11 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform standalone package with `reactivityTransform` syntax candy enabled
 - [`uni-env`](https://github.com/uni-helper/uni-env) - Get the current environment gracefully in uni-app
 
+### Coding Style
+
+- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
+- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
+
 ## Try it now!
 
 ### GitHub Template
