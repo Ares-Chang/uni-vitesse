@@ -23,8 +23,7 @@ watchEffect(() => {
     w="250px"
     text="center"
     bg="transparent"
-    border="~ solid rd gray-200"
-    dark:border-color-gray-700
+    border="~ solid rd gray-200 dark:gray-700"
     outline="none active:none"
   >
 </template>
