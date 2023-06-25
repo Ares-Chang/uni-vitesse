@@ -5,12 +5,12 @@ const counter = useCounterStore()
 </script>
 
 <template>
-  <div flex justify-center items-center gap-8>
-    <div btn w-60 h-60 p-0 rd-full center @click="counter.dec()">
+  <div flex gap-8 justify-center items-center>
+    <div p-0 rd-full center h-60 w-60 btn @click="counter.dec()">
       -
     </div>
     <span font-mono>{{ counter.count }}</span>
-    <div btn w-60 h-60 p-0 rd-full center @click="counter.inc()">
+    <div p-0 rd-full center h-60 w-60 btn @click="counter.inc()">
       +
     </div>
   </div>

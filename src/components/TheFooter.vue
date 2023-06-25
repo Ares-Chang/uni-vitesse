@@ -1,11 +1,11 @@
 <template>
-  <div flex="~ gap-4" mt-5 justify-center text-xl>
+  <div flex="~ gap-4" mt-5 text-xl justify-center>
     <div title="Home" @click="router.replace('/index')">
-      <div icon-btn i-carbon-campsite />
+      <div i-carbon-campsite icon-btn />
     </div>
 
     <div title="SubPages" @click="router.push('~/pages-sub/index')">
-      <div icon-btn i-carbon-sub-volume />
+      <div i-carbon-sub-volume icon-btn />
     </div>
 
     <div icon-btn title="Toogle dark mode" @click="toggleDark()">
