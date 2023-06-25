@@ -39,6 +39,7 @@
     "type-check": "vue-tsc --noEmit",
     "up": "npx taze major -I",
     "lint": "eslint .",
+    "test": "vitest",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "npx simple-git-hooks"
   },
@@ -85,6 +86,7 @@
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "4.1.4",
+    "vitest": "^0.32.2",
     "vue-tsc": "^1.8.0"
   },
   "simple-git-hooks": {

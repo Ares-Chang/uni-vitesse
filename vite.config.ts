@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
@@ -74,4 +76,12 @@ export default defineConfig({
      */
     ReactivityTransform(),
   ],
+
+  /**
+   * Vitest
+   * @see https://github.com/vitest-dev/vitest
+   */
+  test: {
+    environment: 'jsdom',
+  },
 })
