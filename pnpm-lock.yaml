@@ -79,9 +79,6 @@ devDependencies:
   '@uni-helper/uni-app-types':
     specifier: ^0.5.8
     version: registry.npmmirror.com/@uni-helper/uni-app-types@0.5.8(typescript@5.1.3)
-  '@uni-helper/uni-env':
-    specifier: ^0.0.3
-    version: 0.0.3
   '@uni-helper/vite-plugin-uni-layouts':
     specifier: ^0.1.1
     version: 0.1.1

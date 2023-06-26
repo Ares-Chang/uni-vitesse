@@ -1,5 +1,3 @@
-import { isH5 } from '@uni-helper/uni-env'
-
 /**
  * 路由跳转
  * @param {string} path 路由地址 pages 目录下可省略 pases，子包目录下需要以 ~ 开头，如：~/pages-sub/index
@@ -33,12 +31,15 @@ class UseRouter {
 
     const isLink = url.startsWith('http')
     if (isLink) {
-      if (isH5)
-        return window.open(url, replace ? '_self' : '_blank')
+      // #ifdef H5
+      window.open(url, replace ? '_self' : '_blank')
+      // #endif
 
+      // #ifndef H5
       uni.navigateTo({
         url: `/pages/webview?url=${url}`,
       })
+      // #endif
     }
 
     url = getPath(url)
