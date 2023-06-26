@@ -38,9 +38,15 @@ Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vite
 
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+
+- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
+
 - 🦾 TypeScript, of course
 
 - 🔒︎ [Lock the pnpm package manager](https://pnpm.io/only-allow-pnpm)
+
+- ☁️ Deploy on [Netlify](https://www.netlify.com/), zero-config
 
 <br>
 
@@ -61,6 +67,10 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
+### Test Framework
+
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
+
 ### Plugins
 
 - [`Pinia`](https://pinia.vuejs.org) - Intuitive Vue.js state management library
@@ -70,7 +80,6 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform standalone package with `reactivityTransform` syntax candy enabled
-- [`uni-env`](https://github.com/uni-helper/uni-env) - Get the current environment gracefully in uni-app
 
 ### Coding Style
 

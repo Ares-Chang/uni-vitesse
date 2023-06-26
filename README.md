@@ -38,9 +38,15 @@
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
+- 📥 [API 自动导入](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/composables) - 直接使用 Composition API 等
+
+- ✅ 使用 [Vitest](https://vitest.dev/) 进行单元和组件测试
+
 - 🦾 TypeScript, 当然
 
 - 🔒︎ [锁 pnpm 包管理](https://pnpm.io/only-allow-pnpm)
+
+- ☁️ 零配置部署 [Netlify](https://www.netlify.com/)
 
 <br>
 
@@ -61,6 +67,10 @@
 - [Iconify](https://iconify.design) - 使用任意的图标集，浏览：[🔍Icônes](https://icones.netlify.app/)
 - [UnoCSS 的纯 CSS 图标方案](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
+### 测试框架
+
+- [Vitest](https://github.com/vitest-dev/vitest) - 由 Vite 支持的单元测试
+
 ### 插件
 
 - [`Pinia`](https://pinia.vuejs.org) - 符合直觉的 Vue.js 状态管理库
@@ -70,7 +80,6 @@
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 组件自动导入
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS 小程序预设，兼容在小程序中使用 `Attributify Mode`
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform 独立包，可开启 `reactivityTransform` 语法糖
-- [`uni-env`](https://github.com/uni-helper/uni-env) - 在 uni-app 中优雅的获取当前环境
 
 ### 编码风格
 
