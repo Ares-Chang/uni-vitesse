@@ -40,6 +40,8 @@ class UseRouter {
         url: `/pages/webview?url=${url}`,
       })
       // #endif
+
+      return
     }
 
     url = getPath(url)
