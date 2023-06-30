@@ -1,3 +1,14 @@
+/*
+ * @Description: ^_^
+ * @Author: sharebravery
+ * @Date: 2023-06-28 09:44:47
+ */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import pagesJson from '/src/pages.json'
+
+const { pages, tabBar } = pagesJson as UniAppPagesConfig
+
 /**
  * 路由跳转
  * @param {string} path 路由地址 pages 目录下可省略 pases，子包目录下需要以 ~ 开头，如：~/pages-sub/index
@@ -5,7 +16,8 @@
  * @param {boolean} replace 是否替换当前页面
  */
 interface Router {
-  path: string
+  path?: string
+  name?: string
   query?: Record<string, any>
   replace?: boolean
 }
@@ -25,7 +37,14 @@ class UseRouter {
     }
     else {
       const queryParams = this.setQuery(arg?.query || {})
-      url = `${arg?.path}?${queryParams}`
+
+      if (arg?.path) {
+        url = `${arg?.path}?${queryParams}`
+      }
+      else if (arg && 'name' in arg) {
+        const page = pages.find(e => (e as any)?.name === arg.name)
+        url = `${page?.path}?${queryParams}`
+      }
       replace = arg?.replace || false
     }
 
@@ -49,7 +68,7 @@ class UseRouter {
     if (replace)
       uni.redirectTo({ url })
     else
-      uni.navigateTo({ url })
+      tabBar?.list.find(e => url.includes(e.pagePath)) ? uni.switchTab({ url }) : uni.navigateTo({ url })
   }
 
   replace(params?: string | Router) {
@@ -66,6 +85,10 @@ class UseRouter {
       delta,
     })
   }
+
+  reLaunch(options: UniNamespace.ReLaunchOptions) {
+    uni.reLaunch(options)
+  }
 }
 
 function getPath(url: string) {
@@ -75,9 +98,9 @@ function getPath(url: string) {
     return url.replace('~', '')
 
   // 输入目录是否包含 pages
-  const hasPages = url.startsWith('/pages')
+  const hasPages = url.startsWith('pages')
   if (hasPages)
-    return url
+    return `/${url}`
   else
     return `/pages${url}`
 }

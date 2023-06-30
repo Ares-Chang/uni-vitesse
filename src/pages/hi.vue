@@ -23,3 +23,7 @@ const props = defineProps<{ name: string }>()
     </div>
   </div>
 </template>
+
+<route lang="yaml">
+name: Hi
+</route>

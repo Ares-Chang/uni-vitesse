@@ -2,6 +2,7 @@
   "private": true,
   "packageManager": "pnpm@8.6.3",
   "scripts": {
+    "start": "pnpm dev:h5 --open",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",

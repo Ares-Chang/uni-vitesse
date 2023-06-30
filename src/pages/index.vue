@@ -21,10 +21,22 @@ const name = $ref('')
       >
         Go
       </button>
+
+      <button
+        m-3 text-sm btn
+        :disabled="!name"
+        @click="router.push({ name: 'Hi', query: { name } })"
+      >
+        Go By Name
+      </button>
     </div>
   </div>
 </template>
 
 <route lang="yaml">
+name: Home
 layout: home
+# tabBar:
+#   iconPath: static/logo.png
+#   selectedIconPath: static/logo.png
 </route>

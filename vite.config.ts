@@ -6,6 +6,7 @@ import uni from '@dcloudio/vite-plugin-uni'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import type { PageMetaDatum } from '@uni-helper/vite-plugin-uni-pages'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 
@@ -25,9 +26,26 @@ export default defineConfig({
      * @see https://github.com/uni-helper/vite-plugin-uni-pages
      */
     UniPages({
+      dir: 'src/pages',
+      routeBlockLang: 'yaml',
+      exclude: ['**/components/*.vue'],
       subPackages: [
         'src/pages-sub',
       ],
+      onBeforeWriteFile(ctx) {
+        type PageMeta = (PageMetaDatum & { name: string; tabBar?: { text?: string; iconPath: string; selectedIconPath: string } })
+
+        const pageMetaData = ctx.pageMetaData as PageMeta[]
+
+        ctx.pagesGlobConfig!.tabBar!.list = pageMetaData.flatMap(e => 'tabBar' in e
+          ? {
+              pagePath: e.path,
+              text: e.tabBar?.text ? e.tabBar.text : e.style?.navigationBarTitleText,
+              iconPath: e.tabBar!.iconPath,
+              selectedIconPath: e.tabBar!.selectedIconPath,
+            }
+          : [])
+      },
     }),
 
     /**

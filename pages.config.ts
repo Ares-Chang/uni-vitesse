@@ -14,4 +14,10 @@ export default defineUniPages({
       titleNView: false, // 移除 H5、APP 顶部导航
     },
   },
+  tabBar: {
+    color: '#474747',
+    selectedColor: '#add5a2',
+    backgroundColor: '#d7ecff',
+    list: [],
+  },
 })

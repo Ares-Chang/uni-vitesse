@@ -13,5 +13,32 @@
    * 解决 unocss @apply 警告问题
    * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
    */
-  "scss.lint.unknownAtRules": "ignore"
+  "scss.lint.unknownAtRules": "ignore",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#1b98e7",
+    "activityBar.background": "#1b98e7",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#ffffff99",
+    "activityBarBadge.background": "#f9c5e5",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#ffffff99",
+    "panel.border": "#1b98e7",
+    "sash.hoverBorder": "#1b98e7",
+    "statusBar.background": "#147abb",
+    "statusBar.border": "#147abb",
+    "statusBar.debuggingBackground": "#bb5514",
+    "statusBar.debuggingBorder": "#bb5514",
+    "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#1b98e7",
+    "statusBarItem.remoteBackground": "#147abb",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "tab.activeBorder": "#1b98e7",
+    "titleBar.activeBackground": "#147abb",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.border": "#147abb",
+    "titleBar.inactiveBackground": "#147abb99",
+    "titleBar.inactiveForeground": "#ffffff99"
+  },
+  "peacock.color": "#147abb"
 }
