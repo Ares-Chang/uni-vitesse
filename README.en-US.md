@@ -80,6 +80,7 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform standalone package with `reactivityTransform` syntax candy enabled
+- [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - Designed to enhance the Vue developer experience.
 
 ### Coding Style
 

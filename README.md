@@ -80,6 +80,7 @@
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 组件自动导入
 - [`unocss-preset-weapp`](https://github.com/MellowCo/unocss-preset-weapp) - UnoCSS 小程序预设，兼容在小程序中使用 `Attributify Mode`
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform 独立包，可开启 `reactivityTransform` 语法糖
+- [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - 旨在增强 Vue 开发者体验。
 
 ### 编码风格
 
