@@ -8,6 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 // @ts-expect-error failed to resolve types
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
@@ -67,6 +68,12 @@ export default defineConfig({
     Components({
       dts: 'src/components.d.ts',
     }),
+
+    /**
+     * vite-plugin-vue-devtools 增强 Vue 开发者体验
+     * @see https://github.com/webfansplz/vite-plugin-vue-devtools
+     */
+    VueDevTools(),
 
     uni(),
 
