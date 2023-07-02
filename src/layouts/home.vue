@@ -11,7 +11,7 @@
     >
       <slot />
       <TheFooter />
-      <div mx-auto mt-4 opacity-50 text-sm text-center>
+      <div mx-auto mt-4 text-center text-sm opacity-50>
         [Home Layout]
       </div>
     </main>

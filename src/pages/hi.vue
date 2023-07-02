@@ -8,7 +8,7 @@ const props = defineProps<{ name: string }>()
     <p my-1>
       Hi, {{ props.name }}!
     </p>
-    <p op75 text-sm italic>
+    <p text-sm italic op75>
       <em>Demo of dynamic route</em>
     </p>
 

@@ -2,15 +2,39 @@
   "compilerOptions": {
     "sourceMap": true,
     "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types",
+      "@vue-macros/reactivity-transform/macros-global"
+    ],
     "paths": {
-      "@/*": ["./src/*"]
-    },
-    "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types", "@uni-helper/uni-app-types", "@vue-macros/reactivity-transform/macros-global"]
+      "~/*": ["src/*"],
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "./auto-imports.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "./auto-imports.d.ts"
+  ],
   "exclude": ["dist", "node_modules"],
 
+  // uni-app Component type prompt
   "vueCompilerOptions": {
     "nativeTags": ["block", "component", "template", "slot"]
   }
