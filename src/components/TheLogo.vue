@@ -7,9 +7,7 @@ import logo from '~/static/logo.png'
     <div my-6 flex justify-center>
       <image h-14 w-14 :src="logo" />
       <div
-        text="4xl gray4"
-        m="x-4 y-auto"
-
+        text="4xl gray4" m="x-4 y-auto"
         i-carbon-add transform transition-all-500 hover:rotate-135
       />
       <div i-carbon-campsite inline-block text-5xl />

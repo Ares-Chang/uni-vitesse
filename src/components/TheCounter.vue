@@ -6,12 +6,18 @@ const counter = useCounterStore()
 
 <template>
   <div flex items-center justify-center gap-8>
-    <div h-8 w-8 center rd-full p-0 btn @click="counter.dec()">
+    <div class="count-btn" @click="counter.dec()">
       -
     </div>
     <span font-mono>{{ counter.count }}</span>
-    <div h-8 w-8 center rd-full p-0 btn @click="counter.inc()">
+    <div class="count-btn" @click="counter.inc()">
       +
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.count-btn {
+  --uno: h-8 w-8 center rd-full p-0 btn;
+}
+</style>
