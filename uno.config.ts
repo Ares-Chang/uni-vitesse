@@ -1,11 +1,37 @@
+import type { Preset, SourceCodeTransformer } from 'unocss'
 import {
   defineConfig,
+  presetAttributify,
   presetIcons,
+  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import presetWeapp from 'unocss-preset-weapp'
-import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
+import {
+  presetApplet,
+  // presetRemRpx,
+  transformerApplet,
+  transformerAttributify,
+} from 'unocss-applet'
+
+const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp-') ?? false
+const presets: Preset[] = []
+const transformers: SourceCodeTransformer[] = []
+
+if (isApplet) {
+  /**
+   * UnoCSS Applet
+   * @see https://github.com/unocss-applet/unocss-applet
+   */
+  presets.push(presetApplet())
+  // presets.push(presetRemRpx()) // 如果需要使用 rem 转 rpx 单位，需要启用此插件
+  transformers.push(transformerAttributify())
+  transformers.push(transformerApplet())
+}
+else {
+  presets.push(presetUno())
+  presets.push(presetAttributify())
+}
 
 export default defineConfig({
   presets: [
@@ -14,12 +40,7 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
     }),
-
-    /**
-     * 微信小程序预设
-     * @see https://github.com/MellowCo/unocss-preset-weapp
-     */
-    presetWeapp(),
+    ...presets,
   ],
   /**
    * 自定义快捷语句
@@ -31,9 +52,8 @@ export default defineConfig({
     ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600 !outline-none'],
   ],
   transformers: [
-    transformerClass(),
-    transformerAttributify(), // 开启属性模式(支持小程序)
     transformerDirectives(), // 启用 @apply 功能
     transformerVariantGroup(), // 启用 () 分组功能
+    ...transformers,
   ],
 })
