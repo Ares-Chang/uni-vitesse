@@ -115,9 +115,6 @@ devDependencies:
   unocss-applet:
     specifier: ^0.5.3
     version: registry.npmmirror.com/unocss-applet@0.5.3
-  unocss-preset-weapp:
-    specifier: ^0.53.2
-    version: 0.53.2
   unplugin-auto-import:
     specifier: ^0.16.4
     version: 0.16.4
@@ -2515,12 +2512,6 @@ packages:
       '@jridgewell/resolve-uri': registry.npmmirror.com/@jridgewell/resolve-uri@3.1.0
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec@1.4.14
 
-  /@meoc/utils@0.2.4:
-    resolution: {integrity: sha512-BzJZ0sBDPleIkghDPyPfz5VPnVF8QEe4FkBRmcHxUVMyz2eavVIA7tWq4w+0CwSZavu6xXWNxN2yT4PvaYjJkQ==}
-    dependencies:
-      dayjs: 1.11.7
-    dev: true
-
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -3947,10 +3938,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       time-zone: 1.0.0
-    dev: true
-
-  /dayjs@1.11.7:
-    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: true
 
   /debug@2.6.9:
@@ -6930,18 +6917,6 @@ packages:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
 
-  /unocss-preset-weapp@0.53.2:
-    resolution: {integrity: sha512-mKVw3RCaGN46qMsipMwfaB4CCWX+sFFBERG97qj2y7pJI2QBdIkdLzyUS249W3zmOCtATg50ZN94wjzEhsBdOQ==}
-    dependencies:
-      '@rollup/pluginutils': 5.0.2
-      '@unocss/core': 0.53.1
-      '@unocss/extractor-arbitrary-variants': 0.53.1
-      unplugin-attributify-to-class: 0.2.3
-      unplugin-transform-class: 0.4.0
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
   /unocss@0.53.1(postcss@8.4.24)(vite@4.1.4):
     resolution: {integrity: sha512-0lRblA8hX7VUu5dywbcStzm590Iz5ahSJGsMNKNH3+u9C7AfJcKT8epxjkIkJWQBNJLD5vsao4SuuhLWB7eMQQ==}
     engines: {node: '>=14'}
@@ -6983,16 +6958,6 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-attributify-to-class@0.2.3:
-    resolution: {integrity: sha512-WaK0ovkloDPv4casjLmfm3xlKjWm7ns//tjgkiWIm6FBiHIx1GJ8NKpRDi+s6U2YeyF0g5e/kIhBeM48TOo5lQ==}
-    dependencies:
-      '@rollup/pluginutils': 5.0.2
-      unplugin: 1.3.1
-      unplugin-transform-class: 0.4.0
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
   /unplugin-auto-import@0.16.4:
     resolution: {integrity: sha512-xdgBa9NAS3JG8HjkAZHSbGSMlrjKpaWKXGUzaF6RzEtr980RCl1t0Zsu0skUInNYrEQfqaHc7aGWPv41DLTK/w==}
     engines: {node: '>=14'}
@@ -7011,16 +6976,6 @@ packages:
       magic-string: 0.30.0
       minimatch: 9.0.1
       unimport: 3.0.7
-      unplugin: 1.3.1
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
-  /unplugin-transform-class@0.4.0:
-    resolution: {integrity: sha512-W3e6Z6VNdra/xmtZMRg0E8/DH8yldeWJ19W+JU5slBQZcb3q6S1OPMpGlcFyrlkHs3rKTF/Ne+3GjaQUy0im0g==}
-    dependencies:
-      '@meoc/utils': 0.2.4
-      '@rollup/pluginutils': 5.0.2
       unplugin: 1.3.1
     transitivePeerDependencies:
       - rollup
