@@ -5,9 +5,9 @@
     }"
   >
     <main
-      px-4 py-10
+      p="x-4 y-10"
       font-sans text="center"
-      color-gray-700 dark:color-gray-200
+      color="gray-700 dark:gray-200"
     >
       <slot />
       <TheFooter />
