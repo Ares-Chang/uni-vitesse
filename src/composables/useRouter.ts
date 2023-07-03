@@ -17,7 +17,7 @@ class UseRouter {
       .join('&') // 将数组用 & 符号连接成字符串
   }
 
-  push(arg?: string | Router) {
+  push(arg: string | Router) {
     let url = ''
     let replace = false
     if (typeof arg === 'string') {
@@ -52,7 +52,7 @@ class UseRouter {
       uni.navigateTo({ url })
   }
 
-  replace(params?: string | Router) {
+  replace(params: string | Router) {
     const arg = typeof params === 'string' ? { path: params } : params
 
     this.push({
