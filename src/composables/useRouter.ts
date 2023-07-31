@@ -3,11 +3,13 @@
  * @param {string} path 路由地址 pages 目录下可省略 pases，子包目录下需要以 ~ 开头，如：~/pages-sub/index
  * @param {Record<string, any>} query 路由参数
  * @param {boolean} replace 是否替换当前页面
+ * @param {boolean} tabBar 是否跳转到 tabBar 页面
  */
 interface Router {
   path: string
   query?: Record<string, any>
   replace?: boolean
+  tabBar?: boolean
 }
 
 class UseRouter {
@@ -20,6 +22,7 @@ class UseRouter {
   push(arg: string | Router) {
     let url = ''
     let replace = false
+    let tabBar = false
     if (typeof arg === 'string') {
       url = arg
     }
@@ -27,6 +30,7 @@ class UseRouter {
       const queryParams = this.setQuery(arg?.query || {})
       url = `${arg?.path}?${queryParams}`
       replace = arg?.replace || false
+      tabBar = arg?.tabBar || false
     }
 
     const isLink = url.startsWith('http')
@@ -45,6 +49,9 @@ class UseRouter {
     }
 
     url = getPath(url)
+
+    if (tabBar)
+      return uni.switchTab({ url })
 
     if (replace)
       uni.redirectTo({ url })
