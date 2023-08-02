@@ -48,8 +48,6 @@ class UseRouter {
       return
     }
 
-    url = getPath(url)
-
     if (tabBar)
       return uni.switchTab({ url })
 
@@ -73,20 +71,6 @@ class UseRouter {
       delta,
     })
   }
-}
-
-function getPath(url: string) {
-  // 是否是子包
-  const isSub = url.startsWith('~')
-  if (isSub)
-    return url.replace('~', '')
-
-  // 输入目录是否包含 pages
-  const hasPages = url.startsWith('/pages')
-  if (hasPages)
-    return url
-  else
-    return `/pages${url}`
 }
 
 export const router = new UseRouter()

@@ -17,7 +17,7 @@ const name = $ref('')
       <button
         m-3 text-sm btn
         :disabled="!name"
-        @click="router.push(`/hi?name=${name}`)"
+        @click="router.push(`/pages/hi?name=${name}`)"
       >
         Go
       </button>
