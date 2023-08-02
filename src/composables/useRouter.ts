@@ -30,7 +30,7 @@ export declare interface RouterConfig {
 /**
  * Router 跳转参数
  */
-export declare type RouterLocationRaw = string | RouteLocationOptions
+export declare type RouterLocationRaw = string | RouteLocationOptions | LocationUniAppParams
 
 /**
  * Router 跳转参数选项
@@ -58,6 +58,12 @@ export declare interface RouteLocationOptions {
  * Router Query 参数
  */
 export declare type LocationQueryRaw = Record<string, any>
+/**
+ * 其它参数，可扩展。
+ * 参考 uni-app 路由跳转属性
+ * @see https://uniapp.dcloud.net.cn/api/router.html
+ */
+export declare type LocationUniAppParams = Record<string, any>
 
 export function useRouter(config: RouterConfig = {}): Router {
   function setQuery(params: Record<string, any>) {
@@ -70,14 +76,17 @@ export function useRouter(config: RouterConfig = {}): Router {
     let url = ''
     let replace = false
     let tabBar = false
+    let arg = {}
     if (typeof to === 'string') {
       url = to
     }
     else {
-      const queryParams = setQuery(to?.query || {})
-      url = `${to?.path}?${queryParams}`
-      replace = to?.replace || false
-      tabBar = to?.tabBar || false
+      const { query: _query, path: _path, replace: _replace, tabBar: _tabBar, ..._arg } = to
+      const queryParams = setQuery(_query || {})
+      url = `${_path}?${queryParams}`
+      replace = _replace || false
+      tabBar = _tabBar || false
+      arg = _arg || {}
     }
 
     const isLink = url.startsWith('http')
@@ -90,6 +99,7 @@ export function useRouter(config: RouterConfig = {}): Router {
       if (config?.webview) {
         uni.navigateTo({
           url: `${config.webview}?url=${url}`,
+          ...arg,
         })
       }
       else { throw new Error('请先配置 webview 路由地址') }
@@ -99,12 +109,12 @@ export function useRouter(config: RouterConfig = {}): Router {
     }
 
     if (tabBar)
-      return uni.switchTab({ url })
+      return uni.switchTab({ url, ...arg })
 
     if (replace)
-      uni.redirectTo({ url })
+      uni.redirectTo({ url, ...arg })
     else
-      uni.navigateTo({ url })
+      uni.navigateTo({ url, ...arg })
   }
 
   function replace(to: RouterLocationRaw) {
