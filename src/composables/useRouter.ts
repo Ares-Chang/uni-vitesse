@@ -1,36 +1,83 @@
 /**
- * 路由跳转
- * @param {string} path 目标路由地址
- * @param {Record<string, any>} query 路由参数
- * @param {boolean} replace 是否替换当前页面
- * @param {boolean} tabBar 是否跳转到 tabBar 页面
+ * Router 实例
  */
-interface Router {
+export declare interface Router {
+  /**
+   * 跳转到指定页面
+   * @param to 路由要跳转的地址
+   */
+  push: (to: RouterLocationRaw) => void
+  /**
+   * 跳转新地址并替换当前页面
+   * @param to 路由要跳转的地址
+   */
+  replace: (to: RouterLocationRaw) => void
+  /**
+   * 返回上一页
+   * @param delta 返回的页面数，如果 delta 大于现有页面数，则返回到首页
+   */
+  back: (delta?: number) => void
+}
+
+/**
+ * Router 配置
+ * @param webview webview 路由地址
+ */
+export declare interface RouterConfig {
+  webview?: string
+}
+
+/**
+ * Router 跳转参数
+ */
+export declare type RouterLocationRaw = string | RouteLocationOptions
+
+/**
+ * Router 跳转参数选项
+ */
+export declare interface RouteLocationOptions {
+  /**
+   * 目标路由地址
+   */
   path: string
-  query?: Record<string, any>
+  /**
+   * 路由参数
+   */
+  query?: LocationQueryRaw
+  /**
+   * 是否替换当前页面
+   */
   replace?: boolean
+  /**
+   * 是否跳转到 tabBar 页面
+   */
   tabBar?: boolean
 }
 
-function useRouter(config: { webview: string }) {
+/**
+ * Router Query 参数
+ */
+export declare type LocationQueryRaw = Record<string, any>
+
+export function useRouter(config: RouterConfig = {}): Router {
   function setQuery(params: Record<string, any>) {
     return Object.entries(params) // 将对象转换成 [key, value] 数组
       .map(([key, value]) => `${encodeURI(key)}=${encodeURI(JSON.stringify(value))}`) // 将每个数组元素转换成 key=value 字符串，需要对 value 进行 JSON 序列化和 URL 编码
       .join('&') // 将数组用 & 符号连接成字符串
   }
 
-  function push(arg: string | Router) {
+  function push(to: RouterLocationRaw) {
     let url = ''
     let replace = false
     let tabBar = false
-    if (typeof arg === 'string') {
-      url = arg
+    if (typeof to === 'string') {
+      url = to
     }
     else {
-      const queryParams = setQuery(arg?.query || {})
-      url = `${arg?.path}?${queryParams}`
-      replace = arg?.replace || false
-      tabBar = arg?.tabBar || false
+      const queryParams = setQuery(to?.query || {})
+      url = `${to?.path}?${queryParams}`
+      replace = to?.replace || false
+      tabBar = to?.tabBar || false
     }
 
     const isLink = url.startsWith('http')
@@ -40,7 +87,7 @@ function useRouter(config: { webview: string }) {
       // #endif
 
       // #ifndef H5
-      if (config.webview) {
+      if (config?.webview) {
         uni.navigateTo({
           url: `${config.webview}?url=${url}`,
         })
@@ -60,8 +107,8 @@ function useRouter(config: { webview: string }) {
       uni.navigateTo({ url })
   }
 
-  function replace(params: string | Router) {
-    const arg = typeof params === 'string' ? { path: params } : params
+  function replace(to: RouterLocationRaw) {
+    const arg = typeof to === 'string' ? { path: to } : to
 
     push({
       ...arg,
