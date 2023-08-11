@@ -28,9 +28,28 @@ export declare interface RouterConfig {
 }
 
 /**
+ * Router 跳转参数必填选项 path | url 二选一
+ */
+export declare type RouterLocationRequiredOnly = 'path' | 'url'
+
+/**
+ * Router 跳转参数混合类型
+ */
+export declare type RouterLocationMixtureRaw< T, K extends keyof T = keyof T > =
+  Pick<T, Exclude<keyof T, K>>
+  & {
+    [P in K]-?: Required<Pick<T, P>> & Partial<Record<Exclude<K, P>, undefined>>
+  }[K]
+
+/**
  * Router 跳转参数
  */
-export declare type RouterLocationRaw = string | (RouteLocationOptions | LocationUniAppParams)
+export declare type RouterLocationRaw =
+  string
+  | RouterLocationMixtureRaw<
+      RouteLocationOptions & LocationUniAppParams,
+      RouterLocationRequiredOnly
+    >
 
 /**
  * Router 跳转参数选项
@@ -58,12 +77,16 @@ export declare interface RouteLocationOptions {
  * Router Query 参数
  */
 export declare type LocationQueryRaw = Record<string, any>
+
 /**
  * 其它参数，可扩展。
  * 参考 uni-app 路由跳转属性
  * @see https://uniapp.dcloud.net.cn/api/router.html
  */
-export declare interface LocationUniAppParams extends Partial<UniNamespace.NavigateToOptions>, Partial<UniNamespace.RedirectToOptions>, Partial<UniNamespace.SwitchTabOptions> {
+export declare interface LocationUniAppParams
+  extends Partial<UniNamespace.NavigateToOptions>,
+  Partial<UniNamespace.RedirectToOptions>,
+  Partial<UniNamespace.SwitchTabOptions> {
   success?: (result: UniNamespace.NavigateToSuccessOptions | any) => void
 }
 
