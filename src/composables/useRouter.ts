@@ -30,7 +30,7 @@ export declare interface RouterConfig {
 /**
  * Router 跳转参数
  */
-export declare type RouterLocationRaw = string | RouteLocationOptions | LocationUniAppParams
+export declare type RouterLocationRaw = string | (RouteLocationOptions | LocationUniAppParams)
 
 /**
  * Router 跳转参数选项
@@ -63,7 +63,9 @@ export declare type LocationQueryRaw = Record<string, any>
  * 参考 uni-app 路由跳转属性
  * @see https://uniapp.dcloud.net.cn/api/router.html
  */
-export declare type LocationUniAppParams = Record<string, any>
+export declare interface LocationUniAppParams extends Partial<UniNamespace.NavigateToOptions>, Partial<UniNamespace.RedirectToOptions>, Partial<UniNamespace.SwitchTabOptions> {
+  success?: (result: UniNamespace.NavigateToSuccessOptions | any) => void
+}
 
 export function useRouter(config: RouterConfig = {}): Router {
   function setQuery(params: Record<string, any>) {
@@ -81,9 +83,9 @@ export function useRouter(config: RouterConfig = {}): Router {
       url = to
     }
     else {
-      const { query: _query, path: _path, replace: _replace, tabBar: _tabBar, ..._arg } = to
+      const { query: _query, path: _path, url: _url, replace: _replace, tabBar: _tabBar, ..._arg } = to
       const queryParams = setQuery(_query || {})
-      url = `${_path}?${queryParams}`
+      url = `${_path || _url}?${queryParams}`
       replace = _replace || false
       tabBar = _tabBar || false
       arg = _arg || {}
@@ -109,12 +111,12 @@ export function useRouter(config: RouterConfig = {}): Router {
     }
 
     if (tabBar)
-      return uni.switchTab({ url, ...arg })
+      return uni.switchTab({ ...arg, url })
 
     if (replace)
-      uni.redirectTo({ url, ...arg })
+      uni.redirectTo({ ...arg, url })
     else
-      uni.navigateTo({ url, ...arg })
+      uni.navigateTo({ ...arg, url })
   }
 
   function replace(to: RouterLocationRaw) {
