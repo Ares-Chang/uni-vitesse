@@ -91,9 +91,11 @@ export declare interface LocationUniAppParams
 }
 
 export function useRouter(config: RouterConfig = {}): Router {
-  function setQuery(params: Record<string, any>) {
+  function getQueryStringify(params: Record<string, any>) {
     return Object.entries(params) // 将对象转换成 [key, value] 数组
-      .map(([key, value]) => `${encodeURI(key)}=${encodeURI(JSON.stringify(value))}`) // 将每个数组元素转换成 key=value 字符串，需要对 value 进行 JSON 序列化和 URL 编码
+      .map(([key, value]) => encodeURI(
+        `${key}=${typeof value === 'object' ? JSON.stringify(value) : value}`,
+      )) // 将每个数组元素转换成 key=value 字符串，需要对 value 进行 JSON 序列化和 URL 编码
       .join('&') // 将数组用 & 符号连接成字符串
   }
 
@@ -107,7 +109,7 @@ export function useRouter(config: RouterConfig = {}): Router {
     }
     else {
       const { query: _query, path: _path, url: _url, replace: _replace, tabBar: _tabBar, ..._arg } = to
-      const queryParams = setQuery(_query || {})
+      const queryParams = getQueryStringify(_query || {})
       url = `${_path || _url}?${queryParams}`
       replace = _replace || false
       tabBar = _tabBar || false
