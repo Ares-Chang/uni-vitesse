@@ -76,7 +76,7 @@ export declare interface RouteLocationOptions {
 /**
  * Router Query 参数
  */
-export declare type LocationQueryRaw = Record<string, any>
+export declare type LocationQueryRaw = Record<string, string | number | undefined | null>
 
 /**
  * 其它参数，可扩展。
