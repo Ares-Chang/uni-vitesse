@@ -9,8 +9,6 @@ import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
-
-// @ts-expect-error failed to resolve types
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 
 // https://vitejs.dev/config/
@@ -41,7 +39,7 @@ export default defineConfig({
      * unocss
      * @see https://github.com/antfu/unocss
      * see unocss.config.ts for config
-    */
+     */
     Unocss(),
 
     /**
