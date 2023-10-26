@@ -82,7 +82,7 @@
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unocss": "^0.57.1",
-    "unocss-applet": "^0.7.4",
+    "unocss-applet": "^0.7.6",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",
     "vite": "4.1.4",
