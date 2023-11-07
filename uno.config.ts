@@ -1,37 +1,10 @@
-import type { Preset, SourceCodeTransformer } from 'unocss'
 import {
   defineConfig,
-  presetAttributify,
   presetIcons,
-  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import {
-  presetApplet,
-  // presetRemRpx,
-  transformerApplet,
-  transformerAttributify,
-} from 'unocss-applet'
-
-const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp-') ?? false
-const presets: Preset[] = []
-const transformers: SourceCodeTransformer[] = []
-
-if (isApplet) {
-  /**
-   * UnoCSS Applet
-   * @see https://github.com/unocss-applet/unocss-applet
-   */
-  presets.push(presetApplet())
-  // presets.push(presetRemRpx()) // 如果需要使用 rem 转 rpx 单位，需要启用此插件
-  transformers.push(transformerAttributify())
-  transformers.push(transformerApplet())
-}
-else {
-  presets.push(presetUno())
-  presets.push(presetAttributify())
-}
+import { presetUni } from '@uni-helper/unocss-preset-uni'
 
 export default defineConfig({
   presets: [
@@ -40,7 +13,16 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
     }),
-    ...presets,
+    /**
+     * unocss uni-app 小程序预设
+     * @see https://github.com/uni-helper/unocss-preset-uni
+     */
+    presetUni({
+      remRpx: false,
+      uno: {
+        dark: 'class',
+      },
+    }),
   ],
   /**
    * 自定义快捷语句
@@ -54,6 +36,5 @@ export default defineConfig({
   transformers: [
     transformerDirectives(), // 启用 @apply 功能
     transformerVariantGroup(), // 启用 () 分组功能
-    ...transformers,
   ],
 })
