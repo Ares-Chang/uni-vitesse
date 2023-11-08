@@ -78,9 +78,11 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - layouts for pages
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
+- [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - UnoCSS UniApp preset，Fixed `Windows` Frequent platform crashes [#3603](https://github.com/dcloudio/uni-app/issues/3603)
+  - [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform standalone package with `reactivityTransform` syntax candy enabled
 - [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - Designed to enhance the Vue developer experience.
+- [`uni-app-types`](https://github.com/uni-helper/uni-app-types) - UniApp Type enhance
 
 ### Coding Style
 
