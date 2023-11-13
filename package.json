@@ -62,13 +62,13 @@
     "vue-i18n": "^9.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.43.1",
     "@dcloudio/types": "^3.4.1",
     "@dcloudio/uni-automator": "3.0.0-3081220230817001",
     "@dcloudio/uni-cli-shared": "3.0.0-3081220230817001",
     "@dcloudio/uni-stacktracey": "3.0.0-3081220230817001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3081220230817001",
     "@iconify-json/carbon": "^1.1.21",
+    "@uni-helper/eslint-config": "^0.0.4",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/unocss-preset-uni": "^0.2.4",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.6",
@@ -76,7 +76,7 @@
     "@unocss/eslint-config": "^0.57.1",
     "@vue-macros/reactivity-transform": "^0.3.23",
     "@vue/test-utils": "^2.4.1",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "lint-staged": "^15.0.2",
     "pnpm": "^8.9.2",
     "sass": "^1.69.4",
@@ -95,11 +95,5 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@antfu",
-      "@unocss"
-    ]
   }
 }
