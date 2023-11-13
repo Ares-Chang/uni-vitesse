@@ -95,6 +95,8 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
   - [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - UnoCSS UniApp preset，Fixed `Windows` Frequent platform crashes [#3603](https://github.com/dcloudio/uni-app/issues/3603)
 
     - [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
+  
+  - [`eslint-config`](https://github.com/uni-helper/eslint-config) - [Antfu ESLint](https://github.com/antfu/eslint-config) configuration for UniApp
 
 ### Coding Style
 
