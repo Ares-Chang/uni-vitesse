@@ -37,7 +37,7 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
-    "up": "npx taze major -I && npx @dcloudio/uvm@latest && pnpm install pinia@2.0.36",
+    "up": "npx taze major --exclude pinia,/@dcloudio/ -wir && npx @dcloudio/uvm@latest",
     "lint": "eslint .",
     "test": "vitest",
     "preinstall": "npx only-allow pnpm",
