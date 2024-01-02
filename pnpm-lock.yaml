@@ -94,9 +94,6 @@ devDependencies:
   '@unocss/eslint-config':
     specifier: ^0.58.3
     version: 0.58.3(eslint@8.56.0)(typescript@5.3.3)
-  '@vue-macros/reactivity-transform':
-    specifier: ^0.4.1
-    version: 0.4.1(vue@3.4.3)
   '@vue/runtime-core':
     specifier: ^3.4.3
     version: 3.4.3
@@ -5005,43 +5002,6 @@ packages:
       path-browserify: 1.0.1
     dev: true
 
-  /@vue-macros/common@1.10.0(vue@3.4.3):
-    resolution: {integrity: sha512-4DZsPeQA/nBQDw2RkYAmH7KrFjJVrMdAhJhO1JCl1bbbFXCGeoGjXfkg9wHPppj47s2HpAB3GrqNwqVGbi12NQ==}
-    engines: {node: '>=16.14.0'}
-    peerDependencies:
-      vue: ^2.7.0 || ^3.2.25
-    peerDependenciesMeta:
-      vue:
-        optional: true
-    dependencies:
-      '@babel/types': 7.23.6
-      '@rollup/pluginutils': 5.1.0
-      '@vue/compiler-sfc': 3.4.3
-      ast-kit: 0.11.3
-      local-pkg: 0.5.0
-      magic-string-ast: 0.3.0
-      vue: 3.4.3(typescript@5.3.3)
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
-  /@vue-macros/reactivity-transform@0.4.1(vue@3.4.3):
-    resolution: {integrity: sha512-P+9MnDx9eVr23jDo2CifUtfgYGZ8NcTAE3njS1ef3DpEs9C3p4UfcEbeLyvt1fCpPVf9kpdo//8mVJ8MgVK6cw==}
-    engines: {node: '>=16.14.0'}
-    peerDependencies:
-      vue: ^2.7.0 || ^3.2.25
-    dependencies:
-      '@babel/parser': 7.23.6
-      '@vue-macros/common': 1.10.0(vue@3.4.3)
-      '@vue/compiler-core': 3.4.3
-      '@vue/shared': 3.4.3
-      magic-string: 0.30.5
-      unplugin: 1.5.1
-      vue: 3.4.3(typescript@5.3.3)
-    transitivePeerDependencies:
-      - rollup
-    dev: true
-
   /@vue/babel-helper-vue-transform-on@1.1.5:
     resolution: {integrity: sha512-SgUymFpMoAyWeYWLAY+MkCK3QEROsiUnfaw5zxOVD/M64KQs8D/4oK6Q5omVA2hnvEOE0SCkH2TZxs/jnnUj7w==}
     dev: true
@@ -9138,13 +9098,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: true
-
-  /magic-string-ast@0.3.0:
-    resolution: {integrity: sha512-0shqecEPgdFpnI3AP90epXyxZy9g6CRZ+SZ7BcqFwYmtFEnZ1jpevcV5HoyVnlDS9gCnc1UIg3Rsvp3Ci7r8OA==}
-    engines: {node: '>=16.14.0'}
-    dependencies:
-      magic-string: 0.30.5
     dev: true
 
   /magic-string@0.25.9:

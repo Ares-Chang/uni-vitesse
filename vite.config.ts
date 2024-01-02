@@ -9,7 +9,6 @@ import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -74,12 +73,6 @@ export default defineConfig({
     VueDevTools(),
 
     uni(),
-
-    /**
-     * Reactivity Transform
-     * @see https://vue-macros.sxzz.moe/zh-CN/features/reactivity-transform.html
-     */
-    ReactivityTransform(),
   ],
 
   /**

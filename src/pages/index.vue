@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const name = $ref('')
+const name = ref('')
 </script>
 
 <template>

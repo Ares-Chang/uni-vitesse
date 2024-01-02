@@ -75,7 +75,6 @@
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.7",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.13",
     "@unocss/eslint-config": "^0.58.3",
-    "@vue-macros/reactivity-transform": "^0.4.1",
     "@vue/runtime-core": "^3.4.3",
     "@vue/test-utils": "^2.4.3",
     "eslint": "^8.56.0",
