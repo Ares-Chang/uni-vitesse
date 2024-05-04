@@ -13,8 +13,7 @@
     "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
-      "@uni-helper/uni-app-types",
-      "@vue-macros/reactivity-transform/macros-global"
+      "@uni-helper/uni-app-types"
     ],
     "allowJs": true,
     "strict": true,
