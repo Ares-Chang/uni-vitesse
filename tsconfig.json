@@ -35,6 +35,7 @@
 
   // uni-app Component type prompt
   "vueCompilerOptions": {
-    "nativeTags": ["block", "component", "template", "slot"]
+    "nativeTags": ["block", "component", "template", "slot"],
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   }
 }
