@@ -8,7 +8,7 @@
       <div i-carbon-sub-volume icon-btn />
     </div>
 
-    <div icon-btn title="Toogle dark mode" @click="toggleDark()">
+    <div icon-btn title="Toggle dark mode" @click="toggleDark()">
       <div i-carbon-sun dark:i-carbon-moon />
     </div>
 
