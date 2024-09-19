@@ -63,6 +63,9 @@ importers:
         specifier: ^9.13.1
         version: 9.13.1(vue@3.4.27(typescript@5.4.2))
     devDependencies:
+      '@areschang/utils':
+        specifier: ^0.0.11
+        version: 0.0.11
       '@dcloudio/types':
         specifier: ^3.4.8
         version: 3.4.8
@@ -207,6 +210,9 @@ packages:
 
   '@antfu/utils@0.7.8':
     resolution: {integrity: sha512-rWQkqXRESdjXtc+7NRfK9lASQjpXJu1ayp7qi1d23zZorY+wBHVLHHoVcMsEnkqEBWTFqbztO7/QdJFzyEcLTg==}
+
+  '@areschang/utils@0.0.11':
+    resolution: {integrity: sha512-TSsYrntlPhcmByRtTv7iOsLS5LdQfTcPrWo9rNGPvMe43WBaKCVJD31yX5Lh+u67653Jy8Gd1de4ciu1Eva9Vw==}
 
   '@babel/code-frame@7.22.13':
     resolution: {integrity: sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==}
@@ -5832,6 +5838,8 @@ snapshots:
   '@antfu/utils@0.7.7': {}
 
   '@antfu/utils@0.7.8': {}
+
+  '@areschang/utils@0.0.11': {}
 
   '@babel/code-frame@7.22.13':
     dependencies:
