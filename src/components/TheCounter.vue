@@ -18,6 +18,6 @@ const counter = useCounterStore()
 
 <style lang="scss" scoped>
 .count-btn {
-  @apply: 'h-8 w-8 center rd-full p-0 btn';
+  @apply: h-8 w-8 center rd-full p-0 btn;
 }
 </style>
