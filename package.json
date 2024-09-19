@@ -73,7 +73,7 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-4020420240722002",
     "@iconify-json/carbon": "^1.2.1",
     "@uni-helper/eslint-config": "^0.2.0",
-    "@uni-helper/uni-app-types": "^0.5.13",
+    "@uni-helper/uni-types": "1.0.0-alpha.4",
     "@uni-helper/unocss-preset-uni": "^0.2.9",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.10",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.27",

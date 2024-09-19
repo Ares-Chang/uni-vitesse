@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
-      "@uni-helper/uni-app-types"
+      "@uni-helper/uni-types"
     ],
     "allowJs": true,
     "strict": true,
@@ -35,7 +35,6 @@
 
   // uni-app Component type prompt
   "vueCompilerOptions": {
-    "nativeTags": ["block", "component", "template", "slot"],
     "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   }
 }
