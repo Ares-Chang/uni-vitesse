@@ -67,8 +67,8 @@ importers:
         version: 9.14.0(vue@3.5.6(typescript@5.6.2))
     devDependencies:
       '@areschang/utils':
-        specifier: ^0.0.11
-        version: 0.0.11
+        specifier: ^0.1.0
+        version: 0.1.0
       '@dcloudio/types':
         specifier: ^3.4.8
         version: 3.4.8
@@ -207,8 +207,8 @@ packages:
   '@antfu/utils@0.7.10':
     resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
 
-  '@areschang/utils@0.0.11':
-    resolution: {integrity: sha512-TSsYrntlPhcmByRtTv7iOsLS5LdQfTcPrWo9rNGPvMe43WBaKCVJD31yX5Lh+u67653Jy8Gd1de4ciu1Eva9Vw==}
+  '@areschang/utils@0.1.0':
+    resolution: {integrity: sha512-jDHpOwkBIs1H/Bpxx/oiWe2UX+J4gUNOrLUCyE0tVPW8vHGd7ahhZVIdd0RgxeKg+DBDUDLHViY5SXB2fkfvjA==}
 
   '@babel/code-frame@7.24.6':
     resolution: {integrity: sha512-ZJhac6FkEd1yhG2AHOmfcXG4ceoLltoCVJjN5XsWN9BifBQr+cHJbWi0h68HZuSORq+3WtJ2z0hwF2NG1b5kcA==}
@@ -5906,7 +5906,7 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@areschang/utils@0.0.11': {}
+  '@areschang/utils@0.1.0': {}
 
   '@babel/code-frame@7.24.6':
     dependencies:
