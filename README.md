@@ -82,13 +82,15 @@
 
 - [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - 旨在增强 Vue 开发者体验。
 
+- [`@areschang/utils`](https://github.com/Ares-Chang/utils) - 个人常用工具函数
+
 - [`uni-helper`](https://github.com/uni-helper) 组织
 
   - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 基于文件的约定式路由
 
   - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
 
-  - [`uni-app-types`](https://github.com/uni-helper/uni-app-types) - UniApp 类型增强
+  - [`uni-types`](https://github.com/uni-helper/uni-typed/tree/main/packages/uni-types) - UniApp 类型增强
 
   - [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - UnoCSS UniApp 预设，修复 `Windows` 平台频繁崩溃问题 [#3603](https://github.com/dcloudio/uni-app/issues/3603)
 

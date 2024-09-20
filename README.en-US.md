@@ -82,13 +82,15 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 - [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - Designed to enhance the Vue developer experience.
 
+- [`@areschang/utils`](https://github.com/Ares-Chang/utils) - Personal common tool functions
+
 - [`uni-helper`](https://github.com/uni-helper) org
 
   - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - file system based routing
 
   - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - layouts for pages
 
-  - [`uni-app-types`](https://github.com/uni-helper/uni-app-types) - UniApp Type enhance
+  - [`uni-types`](https://github.com/uni-helper/uni-typed/tree/main/packages/uni-types) - UniApp Type enhance
 
   - [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - UnoCSS UniApp preset，Fixed `Windows` Frequent platform crashes [#3603](https://github.com/dcloudio/uni-app/issues/3603)
 
