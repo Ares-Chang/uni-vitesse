@@ -56,6 +56,8 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 - ~~VueUse~~
 
+> `VueUse@10.x` and later are [not specifically compatible with UniApp](https://github.com/dcloudio/uni-app/issues/4604), you can install the version before `VueUse@9.x`, or install the [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) plugin for simple compatibility.
+
 ## Pre-packed
 
 ### UI Frameworks

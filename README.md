@@ -56,6 +56,8 @@
 
 - ~~VueUse~~
 
+> `VueUse@10.x` 及之后[不专门兼容 UniApp](https://github.com/dcloudio/uni-app/issues/4604)，可以安装 `VueUse@9.x` 之前版本，或者安装 [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) 插件，做简单兼容。
+
 ## 预配置
 
 ### UI 框架
