@@ -2,6 +2,8 @@
 import { useCounterStore } from '~/stores/counter'
 
 const counter = useCounterStore()
+
+const { count } = storeToRefs(counter)
 </script>
 
 <template>
@@ -9,7 +11,7 @@ const counter = useCounterStore()
     <div class="count-btn" @click="counter.dec()">
       -
     </div>
-    <span font-mono>{{ counter.count }}</span>
+    <span font-mono>{{ count }}</span>
     <div class="count-btn" @click="counter.inc()">
       +
     </div>

@@ -59,6 +59,16 @@ export default defineConfig(async () => {
           'uni-app',
           '@vueuse/core',
           uniuseAutoImports(),
+          {
+            pinia: ['storeToRefs'],
+          },
+          /**
+           * uni-use-router 更加贴全 vue-router 的跳转方式
+           * @see https://github.com/Ares-Chang/uni-use-router
+           */
+          {
+            'uni-use-router': ['useRoute', 'useRouter'],
+          },
         ],
         dts: true,
         dirs: [

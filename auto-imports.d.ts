@@ -115,6 +115,7 @@ declare global {
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
+  const storeToRefs: typeof import('pinia')['storeToRefs']
   const syncRef: typeof import('@vueuse/core')['syncRef']
   const syncRefs: typeof import('@vueuse/core')['syncRefs']
   const templateRef: typeof import('@vueuse/core')['templateRef']
@@ -270,8 +271,8 @@ declare global {
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
   const useRequest: typeof import('@uni-helper/uni-use')['useRequest']
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
-  const useRoute: typeof import('@uni-helper/uni-use')['useRoute']
-  const useRouter: typeof import('@uni-helper/uni-use')['useRouter']
+  const useRoute: typeof import('uni-use-router')['useRoute']
+  const useRouter: typeof import('uni-use-router')['useRouter']
   const useSSRWidth: typeof import('@vueuse/core')['useSSRWidth']
   const useScanCode: typeof import('@uni-helper/uni-use')['useScanCode']
   const useScreenBrightness: typeof import('@uni-helper/uni-use')['useScreenBrightness']
@@ -468,6 +469,7 @@ declare module 'vue' {
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
+    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
@@ -623,8 +625,8 @@ declare module 'vue' {
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>
     readonly useRequest: UnwrapRef<typeof import('@uni-helper/uni-use')['useRequest']>
     readonly useResizeObserver: UnwrapRef<typeof import('@vueuse/core')['useResizeObserver']>
-    readonly useRoute: UnwrapRef<typeof import('@uni-helper/uni-use')['useRoute']>
-    readonly useRouter: UnwrapRef<typeof import('@uni-helper/uni-use')['useRouter']>
+    readonly useRoute: UnwrapRef<typeof import('uni-use-router')['useRoute']>
+    readonly useRouter: UnwrapRef<typeof import('uni-use-router')['useRouter']>
     readonly useSSRWidth: UnwrapRef<typeof import('@vueuse/core')['useSSRWidth']>
     readonly useScanCode: UnwrapRef<typeof import('@uni-helper/uni-use')['useScanCode']>
     readonly useScreenBrightness: UnwrapRef<typeof import('@uni-helper/uni-use')['useScreenBrightness']>
