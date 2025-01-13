@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { useCounterStore } from '~/stores/counter'
+
 const props = defineProps<{ name: string }>()
 
-const date = useDateFormat(new Date(), 'YYYY-MM-DD HH:mm:ss')
+const { time } = storeToRefs(useCounterStore())
+
+const timeAge = useTimeAgo(time)
 </script>
 
 <template>
@@ -13,7 +17,7 @@ const date = useDateFormat(new Date(), 'YYYY-MM-DD HH:mm:ss')
     <div text-sm italic op75>
       <em>Demo of dynamic route</em>
       <p mt-1>
-        <em>{{ date }} log</em>
+        <em>{{ timeAge }} log</em>
       </p>
     </div>
 
