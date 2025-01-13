@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
+import UniPolyfill from 'vite-plugin-uni-polyfill'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {
@@ -55,6 +56,7 @@ export default defineConfig(async () => {
         imports: [
           'vue',
           'uni-app',
+          '@vueuse/core',
         ],
         dts: true,
         dirs: [
@@ -79,6 +81,12 @@ export default defineConfig(async () => {
       VueDevTools(),
 
       uni(),
+
+      /**
+       * 暂时修复 uni 底层依赖不支持 VueUse v10 以上问题
+       * @see https://github.com/dcloudio/uni-app/issues/4604
+       */
+      UniPolyfill(),
     ],
 
     /**

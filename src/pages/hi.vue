@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{ name: string }>()
+
+const date = useDateFormat(new Date(), 'YYYY-MM-DD HH:mm:ss')
 </script>
 
 <template>
@@ -8,9 +10,12 @@ const props = defineProps<{ name: string }>()
     <p my-1>
       Hi, {{ props.name }}!
     </p>
-    <p text-sm italic op75>
+    <div text-sm italic op75>
       <em>Demo of dynamic route</em>
-    </p>
+      <p mt-1>
+        <em>{{ date }} log</em>
+      </p>
+    </div>
 
     <div m="t-8 b-5">
       <TheCounter />
