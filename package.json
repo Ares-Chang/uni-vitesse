@@ -59,6 +59,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4040520250104002",
     "@dcloudio/uni-mp-xhs": "3.0.0-4040520250104002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4040520250104002",
+    "@uni-helper/uni-use": "^0.19.14",
     "@vueuse/core": "^12.4.0",
     "pinia": "^2.0.36",
     "uni-use-router": "^0.0.7",

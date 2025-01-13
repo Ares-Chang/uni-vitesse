@@ -9,6 +9,7 @@ import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import UniPolyfill from 'vite-plugin-uni-polyfill'
+import { uniuseAutoImports } from '@uni-helper/uni-use'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {
@@ -57,6 +58,7 @@ export default defineConfig(async () => {
           'vue',
           'uni-app',
           '@vueuse/core',
+          uniuseAutoImports(),
         ],
         dts: true,
         dirs: [
