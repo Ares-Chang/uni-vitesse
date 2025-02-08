@@ -52,11 +52,11 @@
 
 如无跨端需求, 更推荐 [Vitesse-lite](https://github.com/antfu/vitesse-lite)
 
-## 从 [Vitesse-lite](https://github.com/antfu/vitesse-lite) 中删除了以下特性
+## 使用注意
 
-- ~~VueUse~~
+`VueUse@10.x` 及之后[不专门兼容 UniApp](https://github.com/dcloudio/uni-app/issues/4604)，可以安装 `VueUse@9.x` 之前版本，或者使用 [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) 插件，做简单兼容。
 
-> `VueUse@10.x` 及之后[不专门兼容 UniApp](https://github.com/dcloudio/uni-app/issues/4604)，可以安装 `VueUse@9.x` 之前版本，或者安装 [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) 插件，做简单兼容。
+但小程序端即使做了兼容，也存在部分 API 不支持的情况，需要自行判断。
 
 ## 预配置
 
@@ -86,6 +86,10 @@
 
 - [`@areschang/utils`](https://github.com/Ares-Chang/utils) - 个人常用工具函数
 
+- [`uni-use-router`](https://github.com/Ares-Chang/uni-use-router) - UniApp 路由跳转补充函数库，与 Vue Router 语法靠近
+
+- [`VueUse`](https://github.com/vueuse/vueuse) - 基于 Vue 3 的 Composition API 的实用函数库
+
 - [`uni-helper`](https://github.com/uni-helper) 组织
 
   - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 基于文件的约定式路由
@@ -99,6 +103,8 @@
     - [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS 小程序预设，兼容在小程序中使用 `Attributify Mode`
 
   - [`eslint-config`](https://github.com/uni-helper/eslint-config) - 适用于 UniApp 的 [Antfu ESLint](https://github.com/antfu/eslint-config) 配置
+
+  - [`uni-use`](https://github.com/uni-helper/uni-use) - 基于 VueUse 的 UniApp 实用函数库补充
 
 ### 编码风格
 

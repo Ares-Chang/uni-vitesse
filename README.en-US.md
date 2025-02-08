@@ -52,11 +52,11 @@ Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vite
 
 If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vitesse-lite) is recommended
 
-## Dropped Features from  [Vitesse-lite](https://github.com/antfu/vitesse-lite)
+## Usage Notes
 
-- ~~VueUse~~
+`VueUse@10.x` and later are [not specifically compatible with UniApp](https://github.com/dcloudio/uni-app/issues/4604), you can install the version before `VueUse@9.x`, or use the [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) plugin for simple compatibility.
 
-> `VueUse@10.x` and later are [not specifically compatible with UniApp](https://github.com/dcloudio/uni-app/issues/4604), you can install the version before `VueUse@9.x`, or install the [vite-plugin-uni-polyfill](https://github.com/Ares-Chang/vite-plugin-uni-polyfill) plugin for simple compatibility.
+But the applet side still has some APIs that are not supported even if it is compatible, so you need to judge and handle them yourself.
 
 ## Pre-packed
 
@@ -86,6 +86,10 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 - [`@areschang/utils`](https://github.com/Ares-Chang/utils) - Personal common tool functions
 
+- [`uni-use-router`](https://github.com/Ares-Chang/uni-use-router) - UniApp routing jump supplement function library, close to Vue Router syntax
+
+- [`VueUse`](https://github.com/vueuse/vueuse) - Vue 3 Composition API utility library
+
 - [`uni-helper`](https://github.com/uni-helper) org
 
   - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - file system based routing
@@ -99,6 +103,8 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
     - [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS applets preset, compatible with the use of 'Attributify Mode' in applets
 
   - [`eslint-config`](https://github.com/uni-helper/eslint-config) - [Antfu ESLint](https://github.com/antfu/eslint-config) configuration for UniApp
+
+  - [`uni-use`](https://github.com/uni-helper/uni-use) - UniApp utility function library based on VueUse
 
 ### Coding Style
 
