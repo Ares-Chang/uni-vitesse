@@ -5,8 +5,8 @@
 **文件夹名称可更改，但需要在 `vite.config.ts` 中 进行配置。**
 
 ```ts
-import { defineConfig } from 'vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
@@ -28,8 +28,8 @@ The subpackage routing is the same as the routing configuration under the [pages
 **The folder name can be changed, but it needs to be configured in `vite.config.ts`.**
 
 ```ts
-import { defineConfig } from 'vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [

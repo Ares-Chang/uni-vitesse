@@ -1,16 +1,16 @@
 /// <reference types="vitest" />
 
 import { resolve } from 'node:path'
-import { defineConfig } from 'vite'
 import Uni from '@uni-helper/plugin-uni'
+import { uniuseAutoImports } from '@uni-helper/uni-use'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
-import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
-import VueDevTools from 'vite-plugin-vue-devtools'
+import { defineConfig } from 'vite'
 import UniPolyfill from 'vite-plugin-uni-polyfill'
-import { uniuseAutoImports } from '@uni-helper/uni-use'
-import Unocss from 'unocss/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig(
