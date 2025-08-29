@@ -2,7 +2,7 @@
 
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
-import uni from '@dcloudio/vite-plugin-uni'
+import Uni from '@uni-helper/plugin-uni'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
@@ -10,16 +10,11 @@ import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import UniPolyfill from 'vite-plugin-uni-polyfill'
 import { uniuseAutoImports } from '@uni-helper/uni-use'
+import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
-export default defineConfig(async () => {
-  /**
-   * 为兼容 @dcloudio/vite-plugin-uni 采用 CJS ，而 UnoCSS 只支持 ESM
-   * @see https://github.com/dcloudio/uni-app/issues/4815
-   */
-  const Unocss = await import('unocss/vite').then(i => i.default)
-
-  return {
+export default defineConfig(
+  {
     resolve: {
       alias: {
         '~/': `${resolve(__dirname, 'src')}/`,
@@ -92,7 +87,11 @@ export default defineConfig(async () => {
        */
       VueDevTools(),
 
-      uni(),
+      /**
+       * uni to esm
+       * @see https://uni-helper.js.org/plugin-uni
+       */
+      Uni(),
 
       /**
        * 暂时修复 uni 底层依赖不支持 VueUse v10 以上问题
@@ -108,5 +107,5 @@ export default defineConfig(async () => {
     test: {
       environment: 'jsdom',
     },
-  }
-})
+  },
+)

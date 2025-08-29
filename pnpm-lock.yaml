@@ -99,6 +99,9 @@ importers:
       '@uni-helper/eslint-config':
         specifier: ^0.4.0
         version: 0.4.0(@antfu/eslint-config@2.6.1(@unocss/eslint-plugin@66.4.2(eslint@8.57.1)(typescript@5.9.2))(@vue/compiler-sfc@3.5.20)(eslint@8.57.1)(typescript@5.9.2)(vitest@3.2.4(@types/node@22.10.5)(jsdom@16.7.0)(sass@1.91.0)(terser@5.17.4)))(eslint@8.57.1)
+      '@uni-helper/plugin-uni':
+        specifier: ^0.1.0
+        version: 0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070620250821001(@vueuse/core@13.8.0(vue@3.5.20(typescript@5.9.2)))(postcss@8.5.6)(rollup@4.18.0)(vite@5.2.8(@types/node@22.10.5)(sass@1.91.0)(terser@5.17.4))(vue@3.5.20(typescript@5.9.2)))
       '@uni-helper/uni-types':
         specifier: 1.0.0-alpha.4
         version: 1.0.0-alpha.4(@uni-helper/uni-app-types@1.0.0-alpha.4(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2)))(@uni-helper/uni-cloud-types@1.0.0-alpha.4(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2)))(@uni-helper/uni-ui-types@1.0.0-alpha.4(@uni-helper/uni-app-types@1.0.0-alpha.4(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2)))(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2)))(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2))
@@ -1937,6 +1940,11 @@ packages:
     peerDependencies:
       '@antfu/eslint-config': ^4.0.1
       eslint: ^9.10.0
+
+  '@uni-helper/plugin-uni@0.1.0':
+    resolution: {integrity: sha512-hBPUjoQc/SgqKsyGUl0fJiL+dDwLPhf2es1PJdsXcxHyOujoBP2+D4z5ie+Q72wVwKtTsQSP3tSjww/63JRmbA==}
+    peerDependencies:
+      '@dcloudio/vite-plugin-uni': '*'
 
   '@uni-helper/uni-app-types@1.0.0-alpha.4':
     resolution: {integrity: sha512-ptjRovIr2brNixzZHK3TqjYOt5bEqdYYQWjj0D11fwqqsw6Z24a1OH+X7EDWRUvLCFpfTV9hGPNwxh/wPnP4qQ==}
@@ -8316,6 +8324,10 @@ snapshots:
       local-pkg: 1.1.2
     transitivePeerDependencies:
       - supports-color
+
+  '@uni-helper/plugin-uni@0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070620250821001(@vueuse/core@13.8.0(vue@3.5.20(typescript@5.9.2)))(postcss@8.5.6)(rollup@4.18.0)(vite@5.2.8(@types/node@22.10.5)(sass@1.91.0)(terser@5.17.4))(vue@3.5.20(typescript@5.9.2)))':
+    dependencies:
+      '@dcloudio/vite-plugin-uni': 3.0.0-4070620250821001(@vueuse/core@13.8.0(vue@3.5.20(typescript@5.9.2)))(postcss@8.5.6)(rollup@4.18.0)(vite@5.2.8(@types/node@22.10.5)(sass@1.91.0)(terser@5.17.4))(vue@3.5.20(typescript@5.9.2))
 
   '@uni-helper/uni-app-types@1.0.0-alpha.4(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2))':
     dependencies:
