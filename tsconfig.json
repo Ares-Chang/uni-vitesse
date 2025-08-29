@@ -13,7 +13,8 @@
     "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
-      "@uni-helper/uni-types"
+      "@uni-helper/uni-types",
+      "@uni-helper/vite-plugin-uni-pages"
     ],
     "allowJs": true,
     "strict": true,

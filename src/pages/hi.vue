@@ -26,7 +26,7 @@ const timeAge = useTimeAgo(time)
     </div>
 
     <div>
-      <button m-3 text-sm btn @click="router.back()">
+      <button m-3 btn text-sm @click="router.back()">
         Back
       </button>
     </div>

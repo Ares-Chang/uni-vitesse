@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePage({
+  layout: 'home',
+})
+
 const name = ref('')
 </script>
 
@@ -24,7 +28,3 @@ const name = ref('')
     </div>
   </div>
 </template>
-
-<route lang="yaml">
-layout: home
-</route>
