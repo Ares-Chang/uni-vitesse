@@ -23,7 +23,7 @@ export default defineConfig(
     plugins: [
       /**
        * vite-plugin-uni-pages
-       * @see https://github.com/uni-helper/vite-plugin-uni-pages
+       * @see https://uni-helper.js.org/vite-plugin-uni-pages
        */
       UniPages({
         subPackages: [
@@ -33,7 +33,7 @@ export default defineConfig(
 
       /**
        * vite-plugin-uni-layouts
-       * @see https://github.com/uni-helper/vite-plugin-uni-layouts
+       * @see https://uni-helper.js.org/vite-plugin-uni-layouts
        */
       UniLayouts(),
 
